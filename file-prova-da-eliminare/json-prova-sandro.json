@@ -1,0 +1,1564 @@
+{
+    "networks": [
+        {
+            "name": "nomeBR",
+            "code": "BR"
+        },
+        {
+            "name": "nomeLK",
+            "code": "LK"
+        }
+    ],
+    "stations": [
+        {
+            "name": "nomeBR.ESM01",
+            "code": "BR.ESM01"
+        },
+        {
+            "name": "nomeBR.ESM02",
+            "code": "BR.ESM02"
+        },
+        {
+            "name": "nomeBR.ESM03",
+            "code": "BR.ESM03"
+        },
+        {
+            "name": "nomeBR.ESM04",
+            "code": "BR.ESM04"
+        },
+        {
+            "name": "nomeBR.ESM05",
+            "code": "BR.ESM05"
+        },
+        {
+            "name": "nomeBR.ESM06",
+            "code": "BR.ESM06"
+        },
+        {
+            "name": "nomeBR.ESM07",
+            "code": "BR.ESM07"
+        },
+        {
+            "name": "nomeBR.ESM08",
+            "code": "BR.ESM08"
+        },
+        {
+            "name": "nomeBR.ESM09",
+            "code": "BR.ESM09"
+        },
+        {
+            "name": "nomeBR.ESM10",
+            "code": "BR.ESM10"
+        },
+        {
+            "name": "nomeLK.BRK0",
+            "code": "LK.BRK0"
+        },
+        {
+            "name": "nomeLK.BRK1",
+            "code": "LK.BRK1"
+        },
+        {
+            "name": "nomeLK.BRK2",
+            "code": "LK.BRK2"
+        },
+        {
+            "name": "nomeLK.BRK3",
+            "code": "LK.BRK3"
+        },
+        {
+            "name": "nomeLK.BRK4",
+            "code": "LK.BRK4"
+        }
+    ],
+    "channels": [
+        {
+            "name": "nomeBR.ESM01..ACN",
+            "code": "BR.ESM01..ACN"
+        },
+        {
+            "name": "nomeBR.ESM01..AEN",
+            "code": "BR.ESM01..AEN"
+        },
+        {
+            "name": "nomeBR.ESM01..AEX",
+            "code": "BR.ESM01..AEX"
+        },
+        {
+            "name": "nomeBR.ESM01..AIN",
+            "code": "BR.ESM01..AIN"
+        },
+        {
+            "name": "nomeBR.ESM01..ALE",
+            "code": "BR.ESM01..ALE"
+        },
+        {
+            "name": "nomeBR.ESM01..APS",
+            "code": "BR.ESM01..APS"
+        },
+        {
+            "name": "nomeBR.ESM01..AST",
+            "code": "BR.ESM01..AST"
+        },
+        {
+            "name": "nomeBR.ESM01..EX1",
+            "code": "BR.ESM01..EX1"
+        },
+        {
+            "name": "nomeBR.ESM01..EX2",
+            "code": "BR.ESM01..EX2"
+        },
+        {
+            "name": "nomeBR.ESM01..EX3",
+            "code": "BR.ESM01..EX3"
+        },
+        {
+            "name": "nomeBR.ESM01..GAN",
+            "code": "BR.ESM01..GAN"
+        },
+        {
+            "name": "nomeBR.ESM01..GEL",
+            "code": "BR.ESM01..GEL"
+        },
+        {
+            "name": "nomeBR.ESM01..GLA",
+            "code": "BR.ESM01..GLA"
+        },
+        {
+            "name": "nomeBR.ESM01..GLO",
+            "code": "BR.ESM01..GLO"
+        },
+        {
+            "name": "nomeBR.ESM01..GNS",
+            "code": "BR.ESM01..GNS"
+        },
+        {
+            "name": "nomeBR.ESM01..GPL",
+            "code": "BR.ESM01..GPL"
+        },
+        {
+            "name": "nomeBR.ESM01..GST",
+            "code": "BR.ESM01..GST"
+        },
+        {
+            "name": "nomeBR.ESM01..HH1",
+            "code": "BR.ESM01..HH1"
+        },
+        {
+            "name": "nomeBR.ESM01..HH2",
+            "code": "BR.ESM01..HH2"
+        },
+        {
+            "name": "nomeBR.ESM01..HHZ",
+            "code": "BR.ESM01..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM01..LCE",
+            "code": "BR.ESM01..LCE"
+        },
+        {
+            "name": "nomeBR.ESM01..LCQ",
+            "code": "BR.ESM01..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM01..VCO",
+            "code": "BR.ESM01..VCO"
+        },
+        {
+            "name": "nomeBR.ESM01..VDT",
+            "code": "BR.ESM01..VDT"
+        },
+        {
+            "name": "nomeBR.ESM01..VEC",
+            "code": "BR.ESM01..VEC"
+        },
+        {
+            "name": "nomeBR.ESM01..VEI",
+            "code": "BR.ESM01..VEI"
+        },
+        {
+            "name": "nomeBR.ESM01..VM1",
+            "code": "BR.ESM01..VM1"
+        },
+        {
+            "name": "nomeBR.ESM01..VM2",
+            "code": "BR.ESM01..VM2"
+        },
+        {
+            "name": "nomeBR.ESM01..VM3",
+            "code": "BR.ESM01..VM3"
+        },
+        {
+            "name": "nomeBR.ESM01..VPB",
+            "code": "BR.ESM01..VPB"
+        },
+        {
+            "name": "nomeBR.ESM02..ACN",
+            "code": "BR.ESM02..ACN"
+        },
+        {
+            "name": "nomeBR.ESM02..AEN",
+            "code": "BR.ESM02..AEN"
+        },
+        {
+            "name": "nomeBR.ESM02..AEX",
+            "code": "BR.ESM02..AEX"
+        },
+        {
+            "name": "nomeBR.ESM02..AIN",
+            "code": "BR.ESM02..AIN"
+        },
+        {
+            "name": "nomeBR.ESM02..ALE",
+            "code": "BR.ESM02..ALE"
+        },
+        {
+            "name": "nomeBR.ESM02..APS",
+            "code": "BR.ESM02..APS"
+        },
+        {
+            "name": "nomeBR.ESM02..AST",
+            "code": "BR.ESM02..AST"
+        },
+        {
+            "name": "nomeBR.ESM02..EX1",
+            "code": "BR.ESM02..EX1"
+        },
+        {
+            "name": "nomeBR.ESM02..EX2",
+            "code": "BR.ESM02..EX2"
+        },
+        {
+            "name": "nomeBR.ESM02..EX3",
+            "code": "BR.ESM02..EX3"
+        },
+        {
+            "name": "nomeBR.ESM02..GAN",
+            "code": "BR.ESM02..GAN"
+        },
+        {
+            "name": "nomeBR.ESM02..GEL",
+            "code": "BR.ESM02..GEL"
+        },
+        {
+            "name": "nomeBR.ESM02..GLA",
+            "code": "BR.ESM02..GLA"
+        },
+        {
+            "name": "nomeBR.ESM02..GLO",
+            "code": "BR.ESM02..GLO"
+        },
+        {
+            "name": "nomeBR.ESM02..GNS",
+            "code": "BR.ESM02..GNS"
+        },
+        {
+            "name": "nomeBR.ESM02..GPL",
+            "code": "BR.ESM02..GPL"
+        },
+        {
+            "name": "nomeBR.ESM02..GST",
+            "code": "BR.ESM02..GST"
+        },
+        {
+            "name": "nomeBR.ESM02..HHE",
+            "code": "BR.ESM02..HHE"
+        },
+        {
+            "name": "nomeBR.ESM02..HHN",
+            "code": "BR.ESM02..HHN"
+        },
+        {
+            "name": "nomeBR.ESM02..HHZ",
+            "code": "BR.ESM02..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM02..LCE",
+            "code": "BR.ESM02..LCE"
+        },
+        {
+            "name": "nomeBR.ESM02..LCQ",
+            "code": "BR.ESM02..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM02..VCO",
+            "code": "BR.ESM02..VCO"
+        },
+        {
+            "name": "nomeBR.ESM02..VDT",
+            "code": "BR.ESM02..VDT"
+        },
+        {
+            "name": "nomeBR.ESM02..VEC",
+            "code": "BR.ESM02..VEC"
+        },
+        {
+            "name": "nomeBR.ESM02..VEI",
+            "code": "BR.ESM02..VEI"
+        },
+        {
+            "name": "nomeBR.ESM02..VM1",
+            "code": "BR.ESM02..VM1"
+        },
+        {
+            "name": "nomeBR.ESM02..VM2",
+            "code": "BR.ESM02..VM2"
+        },
+        {
+            "name": "nomeBR.ESM02..VM3",
+            "code": "BR.ESM02..VM3"
+        },
+        {
+            "name": "nomeBR.ESM02..VPB",
+            "code": "BR.ESM02..VPB"
+        },
+        {
+            "name": "nomeBR.ESM03..ACN",
+            "code": "BR.ESM03..ACN"
+        },
+        {
+            "name": "nomeBR.ESM03..ACN",
+            "code": "BR.ESM03..ACN"
+        },
+        {
+            "name": "nomeBR.ESM03..AEN",
+            "code": "BR.ESM03..AEN"
+        },
+        {
+            "name": "nomeBR.ESM03..AEN",
+            "code": "BR.ESM03..AEN"
+        },
+        {
+            "name": "nomeBR.ESM03..AEX",
+            "code": "BR.ESM03..AEX"
+        },
+        {
+            "name": "nomeBR.ESM03..AEX",
+            "code": "BR.ESM03..AEX"
+        },
+        {
+            "name": "nomeBR.ESM03..AIN",
+            "code": "BR.ESM03..AIN"
+        },
+        {
+            "name": "nomeBR.ESM03..AIN",
+            "code": "BR.ESM03..AIN"
+        },
+        {
+            "name": "nomeBR.ESM03..ALE",
+            "code": "BR.ESM03..ALE"
+        },
+        {
+            "name": "nomeBR.ESM03..ALE",
+            "code": "BR.ESM03..ALE"
+        },
+        {
+            "name": "nomeBR.ESM03..APS",
+            "code": "BR.ESM03..APS"
+        },
+        {
+            "name": "nomeBR.ESM03..APS",
+            "code": "BR.ESM03..APS"
+        },
+        {
+            "name": "nomeBR.ESM03..AST",
+            "code": "BR.ESM03..AST"
+        },
+        {
+            "name": "nomeBR.ESM03..AST",
+            "code": "BR.ESM03..AST"
+        },
+        {
+            "name": "nomeBR.ESM03..EX1",
+            "code": "BR.ESM03..EX1"
+        },
+        {
+            "name": "nomeBR.ESM03..EX1",
+            "code": "BR.ESM03..EX1"
+        },
+        {
+            "name": "nomeBR.ESM03..EX2",
+            "code": "BR.ESM03..EX2"
+        },
+        {
+            "name": "nomeBR.ESM03..EX2",
+            "code": "BR.ESM03..EX2"
+        },
+        {
+            "name": "nomeBR.ESM03..EX3",
+            "code": "BR.ESM03..EX3"
+        },
+        {
+            "name": "nomeBR.ESM03..EX3",
+            "code": "BR.ESM03..EX3"
+        },
+        {
+            "name": "nomeBR.ESM03..GAN",
+            "code": "BR.ESM03..GAN"
+        },
+        {
+            "name": "nomeBR.ESM03..GAN",
+            "code": "BR.ESM03..GAN"
+        },
+        {
+            "name": "nomeBR.ESM03..GEL",
+            "code": "BR.ESM03..GEL"
+        },
+        {
+            "name": "nomeBR.ESM03..GEL",
+            "code": "BR.ESM03..GEL"
+        },
+        {
+            "name": "nomeBR.ESM03..GLA",
+            "code": "BR.ESM03..GLA"
+        },
+        {
+            "name": "nomeBR.ESM03..GLA",
+            "code": "BR.ESM03..GLA"
+        },
+        {
+            "name": "nomeBR.ESM03..GLO",
+            "code": "BR.ESM03..GLO"
+        },
+        {
+            "name": "nomeBR.ESM03..GLO",
+            "code": "BR.ESM03..GLO"
+        },
+        {
+            "name": "nomeBR.ESM03..GNS",
+            "code": "BR.ESM03..GNS"
+        },
+        {
+            "name": "nomeBR.ESM03..GNS",
+            "code": "BR.ESM03..GNS"
+        },
+        {
+            "name": "nomeBR.ESM03..GPL",
+            "code": "BR.ESM03..GPL"
+        },
+        {
+            "name": "nomeBR.ESM03..GPL",
+            "code": "BR.ESM03..GPL"
+        },
+        {
+            "name": "nomeBR.ESM03..GST",
+            "code": "BR.ESM03..GST"
+        },
+        {
+            "name": "nomeBR.ESM03..GST",
+            "code": "BR.ESM03..GST"
+        },
+        {
+            "name": "nomeBR.ESM03..HHE",
+            "code": "BR.ESM03..HHE"
+        },
+        {
+            "name": "nomeBR.ESM03..HHE",
+            "code": "BR.ESM03..HHE"
+        },
+        {
+            "name": "nomeBR.ESM03..HHN",
+            "code": "BR.ESM03..HHN"
+        },
+        {
+            "name": "nomeBR.ESM03..HHN",
+            "code": "BR.ESM03..HHN"
+        },
+        {
+            "name": "nomeBR.ESM03..HHZ",
+            "code": "BR.ESM03..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM03..HHZ",
+            "code": "BR.ESM03..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM03..LCE",
+            "code": "BR.ESM03..LCE"
+        },
+        {
+            "name": "nomeBR.ESM03..LCE",
+            "code": "BR.ESM03..LCE"
+        },
+        {
+            "name": "nomeBR.ESM03..LCQ",
+            "code": "BR.ESM03..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM03..LCQ",
+            "code": "BR.ESM03..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM03..VCO",
+            "code": "BR.ESM03..VCO"
+        },
+        {
+            "name": "nomeBR.ESM03..VCO",
+            "code": "BR.ESM03..VCO"
+        },
+        {
+            "name": "nomeBR.ESM03..VDT",
+            "code": "BR.ESM03..VDT"
+        },
+        {
+            "name": "nomeBR.ESM03..VDT",
+            "code": "BR.ESM03..VDT"
+        },
+        {
+            "name": "nomeBR.ESM03..VEC",
+            "code": "BR.ESM03..VEC"
+        },
+        {
+            "name": "nomeBR.ESM03..VEC",
+            "code": "BR.ESM03..VEC"
+        },
+        {
+            "name": "nomeBR.ESM03..VEI",
+            "code": "BR.ESM03..VEI"
+        },
+        {
+            "name": "nomeBR.ESM03..VEI",
+            "code": "BR.ESM03..VEI"
+        },
+        {
+            "name": "nomeBR.ESM03..VM1",
+            "code": "BR.ESM03..VM1"
+        },
+        {
+            "name": "nomeBR.ESM03..VM1",
+            "code": "BR.ESM03..VM1"
+        },
+        {
+            "name": "nomeBR.ESM03..VM2",
+            "code": "BR.ESM03..VM2"
+        },
+        {
+            "name": "nomeBR.ESM03..VM2",
+            "code": "BR.ESM03..VM2"
+        },
+        {
+            "name": "nomeBR.ESM03..VM3",
+            "code": "BR.ESM03..VM3"
+        },
+        {
+            "name": "nomeBR.ESM03..VM3",
+            "code": "BR.ESM03..VM3"
+        },
+        {
+            "name": "nomeBR.ESM03..VPB",
+            "code": "BR.ESM03..VPB"
+        },
+        {
+            "name": "nomeBR.ESM03..VPB",
+            "code": "BR.ESM03..VPB"
+        },
+        {
+            "name": "nomeBR.ESM04..ACN",
+            "code": "BR.ESM04..ACN"
+        },
+        {
+            "name": "nomeBR.ESM04..AEN",
+            "code": "BR.ESM04..AEN"
+        },
+        {
+            "name": "nomeBR.ESM04..AEX",
+            "code": "BR.ESM04..AEX"
+        },
+        {
+            "name": "nomeBR.ESM04..AIN",
+            "code": "BR.ESM04..AIN"
+        },
+        {
+            "name": "nomeBR.ESM04..ALE",
+            "code": "BR.ESM04..ALE"
+        },
+        {
+            "name": "nomeBR.ESM04..APS",
+            "code": "BR.ESM04..APS"
+        },
+        {
+            "name": "nomeBR.ESM04..AST",
+            "code": "BR.ESM04..AST"
+        },
+        {
+            "name": "nomeBR.ESM04..DP1",
+            "code": "BR.ESM04..DP1"
+        },
+        {
+            "name": "nomeBR.ESM04..DP2",
+            "code": "BR.ESM04..DP2"
+        },
+        {
+            "name": "nomeBR.ESM04..DPZ",
+            "code": "BR.ESM04..DPZ"
+        },
+        {
+            "name": "nomeBR.ESM04..EX1",
+            "code": "BR.ESM04..EX1"
+        },
+        {
+            "name": "nomeBR.ESM04..EX2",
+            "code": "BR.ESM04..EX2"
+        },
+        {
+            "name": "nomeBR.ESM04..EX3",
+            "code": "BR.ESM04..EX3"
+        },
+        {
+            "name": "nomeBR.ESM04..GAN",
+            "code": "BR.ESM04..GAN"
+        },
+        {
+            "name": "nomeBR.ESM04..GEL",
+            "code": "BR.ESM04..GEL"
+        },
+        {
+            "name": "nomeBR.ESM04..GLA",
+            "code": "BR.ESM04..GLA"
+        },
+        {
+            "name": "nomeBR.ESM04..GLO",
+            "code": "BR.ESM04..GLO"
+        },
+        {
+            "name": "nomeBR.ESM04..GNS",
+            "code": "BR.ESM04..GNS"
+        },
+        {
+            "name": "nomeBR.ESM04..GP1",
+            "code": "BR.ESM04..GP1"
+        },
+        {
+            "name": "nomeBR.ESM04..GP2",
+            "code": "BR.ESM04..GP2"
+        },
+        {
+            "name": "nomeBR.ESM04..GPL",
+            "code": "BR.ESM04..GPL"
+        },
+        {
+            "name": "nomeBR.ESM04..GPZ",
+            "code": "BR.ESM04..GPZ"
+        },
+        {
+            "name": "nomeBR.ESM04..GST",
+            "code": "BR.ESM04..GST"
+        },
+        {
+            "name": "nomeBR.ESM04..LCE",
+            "code": "BR.ESM04..LCE"
+        },
+        {
+            "name": "nomeBR.ESM04..LCQ",
+            "code": "BR.ESM04..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM04..VCO",
+            "code": "BR.ESM04..VCO"
+        },
+        {
+            "name": "nomeBR.ESM04..VDT",
+            "code": "BR.ESM04..VDT"
+        },
+        {
+            "name": "nomeBR.ESM04..VEC",
+            "code": "BR.ESM04..VEC"
+        },
+        {
+            "name": "nomeBR.ESM04..VEI",
+            "code": "BR.ESM04..VEI"
+        },
+        {
+            "name": "nomeBR.ESM04..VM1",
+            "code": "BR.ESM04..VM1"
+        },
+        {
+            "name": "nomeBR.ESM04..VM2",
+            "code": "BR.ESM04..VM2"
+        },
+        {
+            "name": "nomeBR.ESM04..VM3",
+            "code": "BR.ESM04..VM3"
+        },
+        {
+            "name": "nomeBR.ESM04..VPB",
+            "code": "BR.ESM04..VPB"
+        },
+        {
+            "name": "nomeBR.ESM05..ACN",
+            "code": "BR.ESM05..ACN"
+        },
+        {
+            "name": "nomeBR.ESM05..AEN",
+            "code": "BR.ESM05..AEN"
+        },
+        {
+            "name": "nomeBR.ESM05..AEX",
+            "code": "BR.ESM05..AEX"
+        },
+        {
+            "name": "nomeBR.ESM05..AIN",
+            "code": "BR.ESM05..AIN"
+        },
+        {
+            "name": "nomeBR.ESM05..ALE",
+            "code": "BR.ESM05..ALE"
+        },
+        {
+            "name": "nomeBR.ESM05..APS",
+            "code": "BR.ESM05..APS"
+        },
+        {
+            "name": "nomeBR.ESM05..AST",
+            "code": "BR.ESM05..AST"
+        },
+        {
+            "name": "nomeBR.ESM05..EX1",
+            "code": "BR.ESM05..EX1"
+        },
+        {
+            "name": "nomeBR.ESM05..EX2",
+            "code": "BR.ESM05..EX2"
+        },
+        {
+            "name": "nomeBR.ESM05..EX3",
+            "code": "BR.ESM05..EX3"
+        },
+        {
+            "name": "nomeBR.ESM05..GAN",
+            "code": "BR.ESM05..GAN"
+        },
+        {
+            "name": "nomeBR.ESM05..GEL",
+            "code": "BR.ESM05..GEL"
+        },
+        {
+            "name": "nomeBR.ESM05..GLA",
+            "code": "BR.ESM05..GLA"
+        },
+        {
+            "name": "nomeBR.ESM05..GLO",
+            "code": "BR.ESM05..GLO"
+        },
+        {
+            "name": "nomeBR.ESM05..GNS",
+            "code": "BR.ESM05..GNS"
+        },
+        {
+            "name": "nomeBR.ESM05..GPL",
+            "code": "BR.ESM05..GPL"
+        },
+        {
+            "name": "nomeBR.ESM05..GST",
+            "code": "BR.ESM05..GST"
+        },
+        {
+            "name": "nomeBR.ESM05..HHE",
+            "code": "BR.ESM05..HHE"
+        },
+        {
+            "name": "nomeBR.ESM05..HHN",
+            "code": "BR.ESM05..HHN"
+        },
+        {
+            "name": "nomeBR.ESM05..HHZ",
+            "code": "BR.ESM05..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM05..LCE",
+            "code": "BR.ESM05..LCE"
+        },
+        {
+            "name": "nomeBR.ESM05..LCQ",
+            "code": "BR.ESM05..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM05..VCO",
+            "code": "BR.ESM05..VCO"
+        },
+        {
+            "name": "nomeBR.ESM05..VDT",
+            "code": "BR.ESM05..VDT"
+        },
+        {
+            "name": "nomeBR.ESM05..VEC",
+            "code": "BR.ESM05..VEC"
+        },
+        {
+            "name": "nomeBR.ESM05..VEI",
+            "code": "BR.ESM05..VEI"
+        },
+        {
+            "name": "nomeBR.ESM05..VM1",
+            "code": "BR.ESM05..VM1"
+        },
+        {
+            "name": "nomeBR.ESM05..VM2",
+            "code": "BR.ESM05..VM2"
+        },
+        {
+            "name": "nomeBR.ESM05..VM3",
+            "code": "BR.ESM05..VM3"
+        },
+        {
+            "name": "nomeBR.ESM05..VPB",
+            "code": "BR.ESM05..VPB"
+        },
+        {
+            "name": "nomeBR.ESM06..ACN",
+            "code": "BR.ESM06..ACN"
+        },
+        {
+            "name": "nomeBR.ESM06..AEN",
+            "code": "BR.ESM06..AEN"
+        },
+        {
+            "name": "nomeBR.ESM06..AEX",
+            "code": "BR.ESM06..AEX"
+        },
+        {
+            "name": "nomeBR.ESM06..AIN",
+            "code": "BR.ESM06..AIN"
+        },
+        {
+            "name": "nomeBR.ESM06..ALE",
+            "code": "BR.ESM06..ALE"
+        },
+        {
+            "name": "nomeBR.ESM06..APS",
+            "code": "BR.ESM06..APS"
+        },
+        {
+            "name": "nomeBR.ESM06..AST",
+            "code": "BR.ESM06..AST"
+        },
+        {
+            "name": "nomeBR.ESM06..DP1",
+            "code": "BR.ESM06..DP1"
+        },
+        {
+            "name": "nomeBR.ESM06..DP2",
+            "code": "BR.ESM06..DP2"
+        },
+        {
+            "name": "nomeBR.ESM06..DPZ",
+            "code": "BR.ESM06..DPZ"
+        },
+        {
+            "name": "nomeBR.ESM06..EX1",
+            "code": "BR.ESM06..EX1"
+        },
+        {
+            "name": "nomeBR.ESM06..EX2",
+            "code": "BR.ESM06..EX2"
+        },
+        {
+            "name": "nomeBR.ESM06..EX3",
+            "code": "BR.ESM06..EX3"
+        },
+        {
+            "name": "nomeBR.ESM06..GAN",
+            "code": "BR.ESM06..GAN"
+        },
+        {
+            "name": "nomeBR.ESM06..GEL",
+            "code": "BR.ESM06..GEL"
+        },
+        {
+            "name": "nomeBR.ESM06..GLA",
+            "code": "BR.ESM06..GLA"
+        },
+        {
+            "name": "nomeBR.ESM06..GLO",
+            "code": "BR.ESM06..GLO"
+        },
+        {
+            "name": "nomeBR.ESM06..GNS",
+            "code": "BR.ESM06..GNS"
+        },
+        {
+            "name": "nomeBR.ESM06..GP1",
+            "code": "BR.ESM06..GP1"
+        },
+        {
+            "name": "nomeBR.ESM06..GP2",
+            "code": "BR.ESM06..GP2"
+        },
+        {
+            "name": "nomeBR.ESM06..GPL",
+            "code": "BR.ESM06..GPL"
+        },
+        {
+            "name": "nomeBR.ESM06..GPZ",
+            "code": "BR.ESM06..GPZ"
+        },
+        {
+            "name": "nomeBR.ESM06..GST",
+            "code": "BR.ESM06..GST"
+        },
+        {
+            "name": "nomeBR.ESM06..LCE",
+            "code": "BR.ESM06..LCE"
+        },
+        {
+            "name": "nomeBR.ESM06..LCQ",
+            "code": "BR.ESM06..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM06..VCO",
+            "code": "BR.ESM06..VCO"
+        },
+        {
+            "name": "nomeBR.ESM06..VDT",
+            "code": "BR.ESM06..VDT"
+        },
+        {
+            "name": "nomeBR.ESM06..VEC",
+            "code": "BR.ESM06..VEC"
+        },
+        {
+            "name": "nomeBR.ESM06..VEI",
+            "code": "BR.ESM06..VEI"
+        },
+        {
+            "name": "nomeBR.ESM06..VM1",
+            "code": "BR.ESM06..VM1"
+        },
+        {
+            "name": "nomeBR.ESM06..VM2",
+            "code": "BR.ESM06..VM2"
+        },
+        {
+            "name": "nomeBR.ESM06..VM3",
+            "code": "BR.ESM06..VM3"
+        },
+        {
+            "name": "nomeBR.ESM06..VPB",
+            "code": "BR.ESM06..VPB"
+        },
+        {
+            "name": "nomeBR.ESM07..ACN",
+            "code": "BR.ESM07..ACN"
+        },
+        {
+            "name": "nomeBR.ESM07..AEN",
+            "code": "BR.ESM07..AEN"
+        },
+        {
+            "name": "nomeBR.ESM07..AEX",
+            "code": "BR.ESM07..AEX"
+        },
+        {
+            "name": "nomeBR.ESM07..AIN",
+            "code": "BR.ESM07..AIN"
+        },
+        {
+            "name": "nomeBR.ESM07..ALE",
+            "code": "BR.ESM07..ALE"
+        },
+        {
+            "name": "nomeBR.ESM07..APS",
+            "code": "BR.ESM07..APS"
+        },
+        {
+            "name": "nomeBR.ESM07..AST",
+            "code": "BR.ESM07..AST"
+        },
+        {
+            "name": "nomeBR.ESM07..EX1",
+            "code": "BR.ESM07..EX1"
+        },
+        {
+            "name": "nomeBR.ESM07..EX2",
+            "code": "BR.ESM07..EX2"
+        },
+        {
+            "name": "nomeBR.ESM07..EX3",
+            "code": "BR.ESM07..EX3"
+        },
+        {
+            "name": "nomeBR.ESM07..GAN",
+            "code": "BR.ESM07..GAN"
+        },
+        {
+            "name": "nomeBR.ESM07..GEL",
+            "code": "BR.ESM07..GEL"
+        },
+        {
+            "name": "nomeBR.ESM07..GLA",
+            "code": "BR.ESM07..GLA"
+        },
+        {
+            "name": "nomeBR.ESM07..GLO",
+            "code": "BR.ESM07..GLO"
+        },
+        {
+            "name": "nomeBR.ESM07..GNS",
+            "code": "BR.ESM07..GNS"
+        },
+        {
+            "name": "nomeBR.ESM07..GPL",
+            "code": "BR.ESM07..GPL"
+        },
+        {
+            "name": "nomeBR.ESM07..GST",
+            "code": "BR.ESM07..GST"
+        },
+        {
+            "name": "nomeBR.ESM07..HHE",
+            "code": "BR.ESM07..HHE"
+        },
+        {
+            "name": "nomeBR.ESM07..HHN",
+            "code": "BR.ESM07..HHN"
+        },
+        {
+            "name": "nomeBR.ESM07..HHZ",
+            "code": "BR.ESM07..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM07..LCE",
+            "code": "BR.ESM07..LCE"
+        },
+        {
+            "name": "nomeBR.ESM07..LCQ",
+            "code": "BR.ESM07..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM07..VCO",
+            "code": "BR.ESM07..VCO"
+        },
+        {
+            "name": "nomeBR.ESM07..VDT",
+            "code": "BR.ESM07..VDT"
+        },
+        {
+            "name": "nomeBR.ESM07..VEC",
+            "code": "BR.ESM07..VEC"
+        },
+        {
+            "name": "nomeBR.ESM07..VEI",
+            "code": "BR.ESM07..VEI"
+        },
+        {
+            "name": "nomeBR.ESM07..VM1",
+            "code": "BR.ESM07..VM1"
+        },
+        {
+            "name": "nomeBR.ESM07..VM2",
+            "code": "BR.ESM07..VM2"
+        },
+        {
+            "name": "nomeBR.ESM07..VM3",
+            "code": "BR.ESM07..VM3"
+        },
+        {
+            "name": "nomeBR.ESM07..VPB",
+            "code": "BR.ESM07..VPB"
+        },
+        {
+            "name": "nomeBR.ESM08..ACN",
+            "code": "BR.ESM08..ACN"
+        },
+        {
+            "name": "nomeBR.ESM08..AEN",
+            "code": "BR.ESM08..AEN"
+        },
+        {
+            "name": "nomeBR.ESM08..AEX",
+            "code": "BR.ESM08..AEX"
+        },
+        {
+            "name": "nomeBR.ESM08..AIN",
+            "code": "BR.ESM08..AIN"
+        },
+        {
+            "name": "nomeBR.ESM08..ALE",
+            "code": "BR.ESM08..ALE"
+        },
+        {
+            "name": "nomeBR.ESM08..APS",
+            "code": "BR.ESM08..APS"
+        },
+        {
+            "name": "nomeBR.ESM08..AST",
+            "code": "BR.ESM08..AST"
+        },
+        {
+            "name": "nomeBR.ESM08..EX1",
+            "code": "BR.ESM08..EX1"
+        },
+        {
+            "name": "nomeBR.ESM08..EX2",
+            "code": "BR.ESM08..EX2"
+        },
+        {
+            "name": "nomeBR.ESM08..EX3",
+            "code": "BR.ESM08..EX3"
+        },
+        {
+            "name": "nomeBR.ESM08..GAN",
+            "code": "BR.ESM08..GAN"
+        },
+        {
+            "name": "nomeBR.ESM08..GEL",
+            "code": "BR.ESM08..GEL"
+        },
+        {
+            "name": "nomeBR.ESM08..GLA",
+            "code": "BR.ESM08..GLA"
+        },
+        {
+            "name": "nomeBR.ESM08..GLO",
+            "code": "BR.ESM08..GLO"
+        },
+        {
+            "name": "nomeBR.ESM08..GNS",
+            "code": "BR.ESM08..GNS"
+        },
+        {
+            "name": "nomeBR.ESM08..GPL",
+            "code": "BR.ESM08..GPL"
+        },
+        {
+            "name": "nomeBR.ESM08..GST",
+            "code": "BR.ESM08..GST"
+        },
+        {
+            "name": "nomeBR.ESM08..HH1",
+            "code": "BR.ESM08..HH1"
+        },
+        {
+            "name": "nomeBR.ESM08..HH2",
+            "code": "BR.ESM08..HH2"
+        },
+        {
+            "name": "nomeBR.ESM08..HHE",
+            "code": "BR.ESM08..HHE"
+        },
+        {
+            "name": "nomeBR.ESM08..HHN",
+            "code": "BR.ESM08..HHN"
+        },
+        {
+            "name": "nomeBR.ESM08..HHZ",
+            "code": "BR.ESM08..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM08..HHZ",
+            "code": "BR.ESM08..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM08..LCE",
+            "code": "BR.ESM08..LCE"
+        },
+        {
+            "name": "nomeBR.ESM08..LCQ",
+            "code": "BR.ESM08..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM08..VCO",
+            "code": "BR.ESM08..VCO"
+        },
+        {
+            "name": "nomeBR.ESM08..VDT",
+            "code": "BR.ESM08..VDT"
+        },
+        {
+            "name": "nomeBR.ESM08..VEC",
+            "code": "BR.ESM08..VEC"
+        },
+        {
+            "name": "nomeBR.ESM08..VEI",
+            "code": "BR.ESM08..VEI"
+        },
+        {
+            "name": "nomeBR.ESM08..VM1",
+            "code": "BR.ESM08..VM1"
+        },
+        {
+            "name": "nomeBR.ESM08..VM2",
+            "code": "BR.ESM08..VM2"
+        },
+        {
+            "name": "nomeBR.ESM08..VM3",
+            "code": "BR.ESM08..VM3"
+        },
+        {
+            "name": "nomeBR.ESM08..VPB",
+            "code": "BR.ESM08..VPB"
+        },
+        {
+            "name": "nomeBR.ESM09..ACN",
+            "code": "BR.ESM09..ACN"
+        },
+        {
+            "name": "nomeBR.ESM09..AEN",
+            "code": "BR.ESM09..AEN"
+        },
+        {
+            "name": "nomeBR.ESM09..AEX",
+            "code": "BR.ESM09..AEX"
+        },
+        {
+            "name": "nomeBR.ESM09..AIN",
+            "code": "BR.ESM09..AIN"
+        },
+        {
+            "name": "nomeBR.ESM09..ALE",
+            "code": "BR.ESM09..ALE"
+        },
+        {
+            "name": "nomeBR.ESM09..APS",
+            "code": "BR.ESM09..APS"
+        },
+        {
+            "name": "nomeBR.ESM09..AST",
+            "code": "BR.ESM09..AST"
+        },
+        {
+            "name": "nomeBR.ESM09..DP1",
+            "code": "BR.ESM09..DP1"
+        },
+        {
+            "name": "nomeBR.ESM09..DP2",
+            "code": "BR.ESM09..DP2"
+        },
+        {
+            "name": "nomeBR.ESM09..DPZ",
+            "code": "BR.ESM09..DPZ"
+        },
+        {
+            "name": "nomeBR.ESM09..EX1",
+            "code": "BR.ESM09..EX1"
+        },
+        {
+            "name": "nomeBR.ESM09..EX2",
+            "code": "BR.ESM09..EX2"
+        },
+        {
+            "name": "nomeBR.ESM09..EX3",
+            "code": "BR.ESM09..EX3"
+        },
+        {
+            "name": "nomeBR.ESM09..GAN",
+            "code": "BR.ESM09..GAN"
+        },
+        {
+            "name": "nomeBR.ESM09..GEL",
+            "code": "BR.ESM09..GEL"
+        },
+        {
+            "name": "nomeBR.ESM09..GLA",
+            "code": "BR.ESM09..GLA"
+        },
+        {
+            "name": "nomeBR.ESM09..GLO",
+            "code": "BR.ESM09..GLO"
+        },
+        {
+            "name": "nomeBR.ESM09..GNS",
+            "code": "BR.ESM09..GNS"
+        },
+        {
+            "name": "nomeBR.ESM09..GP1",
+            "code": "BR.ESM09..GP1"
+        },
+        {
+            "name": "nomeBR.ESM09..GP2",
+            "code": "BR.ESM09..GP2"
+        },
+        {
+            "name": "nomeBR.ESM09..GPL",
+            "code": "BR.ESM09..GPL"
+        },
+        {
+            "name": "nomeBR.ESM09..GPZ",
+            "code": "BR.ESM09..GPZ"
+        },
+        {
+            "name": "nomeBR.ESM09..GST",
+            "code": "BR.ESM09..GST"
+        },
+        {
+            "name": "nomeBR.ESM09..LCE",
+            "code": "BR.ESM09..LCE"
+        },
+        {
+            "name": "nomeBR.ESM09..LCQ",
+            "code": "BR.ESM09..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM09..VCO",
+            "code": "BR.ESM09..VCO"
+        },
+        {
+            "name": "nomeBR.ESM09..VDT",
+            "code": "BR.ESM09..VDT"
+        },
+        {
+            "name": "nomeBR.ESM09..VEC",
+            "code": "BR.ESM09..VEC"
+        },
+        {
+            "name": "nomeBR.ESM09..VEI",
+            "code": "BR.ESM09..VEI"
+        },
+        {
+            "name": "nomeBR.ESM09..VM1",
+            "code": "BR.ESM09..VM1"
+        },
+        {
+            "name": "nomeBR.ESM09..VM2",
+            "code": "BR.ESM09..VM2"
+        },
+        {
+            "name": "nomeBR.ESM09..VM3",
+            "code": "BR.ESM09..VM3"
+        },
+        {
+            "name": "nomeBR.ESM09..VPB",
+            "code": "BR.ESM09..VPB"
+        },
+        {
+            "name": "nomeBR.ESM10..ACN",
+            "code": "BR.ESM10..ACN"
+        },
+        {
+            "name": "nomeBR.ESM10..AEN",
+            "code": "BR.ESM10..AEN"
+        },
+        {
+            "name": "nomeBR.ESM10..AEX",
+            "code": "BR.ESM10..AEX"
+        },
+        {
+            "name": "nomeBR.ESM10..AIN",
+            "code": "BR.ESM10..AIN"
+        },
+        {
+            "name": "nomeBR.ESM10..ALE",
+            "code": "BR.ESM10..ALE"
+        },
+        {
+            "name": "nomeBR.ESM10..APS",
+            "code": "BR.ESM10..APS"
+        },
+        {
+            "name": "nomeBR.ESM10..AST",
+            "code": "BR.ESM10..AST"
+        },
+        {
+            "name": "nomeBR.ESM10..EX1",
+            "code": "BR.ESM10..EX1"
+        },
+        {
+            "name": "nomeBR.ESM10..EX2",
+            "code": "BR.ESM10..EX2"
+        },
+        {
+            "name": "nomeBR.ESM10..EX3",
+            "code": "BR.ESM10..EX3"
+        },
+        {
+            "name": "nomeBR.ESM10..GAN",
+            "code": "BR.ESM10..GAN"
+        },
+        {
+            "name": "nomeBR.ESM10..GEL",
+            "code": "BR.ESM10..GEL"
+        },
+        {
+            "name": "nomeBR.ESM10..GLA",
+            "code": "BR.ESM10..GLA"
+        },
+        {
+            "name": "nomeBR.ESM10..GLO",
+            "code": "BR.ESM10..GLO"
+        },
+        {
+            "name": "nomeBR.ESM10..GNS",
+            "code": "BR.ESM10..GNS"
+        },
+        {
+            "name": "nomeBR.ESM10..GPL",
+            "code": "BR.ESM10..GPL"
+        },
+        {
+            "name": "nomeBR.ESM10..GST",
+            "code": "BR.ESM10..GST"
+        },
+        {
+            "name": "nomeBR.ESM10..HH1",
+            "code": "BR.ESM10..HH1"
+        },
+        {
+            "name": "nomeBR.ESM10..HH2",
+            "code": "BR.ESM10..HH2"
+        },
+        {
+            "name": "nomeBR.ESM10..HHZ",
+            "code": "BR.ESM10..HHZ"
+        },
+        {
+            "name": "nomeBR.ESM10..LCE",
+            "code": "BR.ESM10..LCE"
+        },
+        {
+            "name": "nomeBR.ESM10..LCQ",
+            "code": "BR.ESM10..LCQ"
+        },
+        {
+            "name": "nomeBR.ESM10..VCO",
+            "code": "BR.ESM10..VCO"
+        },
+        {
+            "name": "nomeBR.ESM10..VDT",
+            "code": "BR.ESM10..VDT"
+        },
+        {
+            "name": "nomeBR.ESM10..VEC",
+            "code": "BR.ESM10..VEC"
+        },
+        {
+            "name": "nomeBR.ESM10..VEI",
+            "code": "BR.ESM10..VEI"
+        },
+        {
+            "name": "nomeBR.ESM10..VM1",
+            "code": "BR.ESM10..VM1"
+        },
+        {
+            "name": "nomeBR.ESM10..VM2",
+            "code": "BR.ESM10..VM2"
+        },
+        {
+            "name": "nomeBR.ESM10..VM3",
+            "code": "BR.ESM10..VM3"
+        },
+        {
+            "name": "nomeBR.ESM10..VPB",
+            "code": "BR.ESM10..VPB"
+        },
+        {
+            "name": "nomeLK.BRK0..EHE",
+            "code": "LK.BRK0..EHE"
+        },
+        {
+            "name": "nomeLK.BRK0..EHN",
+            "code": "LK.BRK0..EHN"
+        },
+        {
+            "name": "nomeLK.BRK0..EHZ",
+            "code": "LK.BRK0..EHZ"
+        },
+        {
+            "name": "nomeLK.BRK0..HNE",
+            "code": "LK.BRK0..HNE"
+        },
+        {
+            "name": "nomeLK.BRK0..HNN",
+            "code": "LK.BRK0..HNN"
+        },
+        {
+            "name": "nomeLK.BRK0..HNZ",
+            "code": "LK.BRK0..HNZ"
+        },
+        {
+            "name": "nomeLK.BRK1..EHE",
+            "code": "LK.BRK1..EHE"
+        },
+        {
+            "name": "nomeLK.BRK1..EHN",
+            "code": "LK.BRK1..EHN"
+        },
+        {
+            "name": "nomeLK.BRK1..EHZ",
+            "code": "LK.BRK1..EHZ"
+        },
+        {
+            "name": "nomeLK.BRK1..HNE",
+            "code": "LK.BRK1..HNE"
+        },
+        {
+            "name": "nomeLK.BRK1..HNN",
+            "code": "LK.BRK1..HNN"
+        },
+        {
+            "name": "nomeLK.BRK1..HNZ",
+            "code": "LK.BRK1..HNZ"
+        },
+        {
+            "name": "nomeLK.BRK2..EHE",
+            "code": "LK.BRK2..EHE"
+        },
+        {
+            "name": "nomeLK.BRK2..EHN",
+            "code": "LK.BRK2..EHN"
+        },
+        {
+            "name": "nomeLK.BRK2..EHZ",
+            "code": "LK.BRK2..EHZ"
+        },
+        {
+            "name": "nomeLK.BRK2..HNE",
+            "code": "LK.BRK2..HNE"
+        },
+        {
+            "name": "nomeLK.BRK2..HNN",
+            "code": "LK.BRK2..HNN"
+        },
+        {
+            "name": "nomeLK.BRK2..HNZ",
+            "code": "LK.BRK2..HNZ"
+        },
+        {
+            "name": "nomeLK.BRK3..EHE",
+            "code": "LK.BRK3..EHE"
+        },
+        {
+            "name": "nomeLK.BRK3..EHN",
+            "code": "LK.BRK3..EHN"
+        },
+        {
+            "name": "nomeLK.BRK3..EHZ",
+            "code": "LK.BRK3..EHZ"
+        },
+        {
+            "name": "nomeLK.BRK3..HNE",
+            "code": "LK.BRK3..HNE"
+        },
+        {
+            "name": "nomeLK.BRK3..HNN",
+            "code": "LK.BRK3..HNN"
+        },
+        {
+            "name": "nomeLK.BRK3..HNZ",
+            "code": "LK.BRK3..HNZ"
+        },
+        {
+            "name": "nomeLK.BRK4..EHE",
+            "code": "LK.BRK4..EHE"
+        },
+        {
+            "name": "nomeLK.BRK4..EHN",
+            "code": "LK.BRK4..EHN"
+        },
+        {
+            "name": "nomeLK.BRK4..EHZ",
+            "code": "LK.BRK4..EHZ"
+        },
+        {
+            "name": "nomeLK.BRK4..HNE",
+            "code": "LK.BRK4..HNE"
+        },
+        {
+            "name": "nomeLK.BRK4..HNN",
+            "code": "LK.BRK4..HNN"
+        },
+        {
+            "name": "nomeLK.BRK4..HNZ",
+            "code": "LK.BRK4..HNZ"
+        }
+    ]
+}

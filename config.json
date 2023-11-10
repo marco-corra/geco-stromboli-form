@@ -1,7 +1,36 @@
 {
-    "Name": "Marco",
-    "Surname": "Corradini",
-    "Email": "marco.corradini14@gmail.com",
-    "PostVariable": "01|S0|L0|AB",
-    "Saluto": "CIAO"
+    "stations": [
+        {
+            "id": "MIC1",
+            "name": "Infrasonic - Mic1",
+            "channels": [
+                {
+                    "code": "ST.MC1.00.HDF",
+                    "name": "Infrasonic"
+                }
+            ]
+        },
+        {
+            "id": "STR",
+            "name": "Seismo-infrasonic - Stromboli",
+            "channels": [
+                {
+                    "code": "ST.STR.00.HHZ",
+                    "name": "Seismic BB - UD"
+                },
+                {
+                    "code": "ST.STR.00.HHN",
+                    "name": "Seismic BB - NS"
+                },
+                {
+                    "code": "ST.STR.00.HHE",
+                    "name": "Seismic BB - EW"
+                },
+                {
+                    "code": "ST.STR.00.HDF",
+                    "name": "Infrasonic"
+                }
+            ]
+        }
+    ]
 }

@@ -1,18 +1,22 @@
-fetch('config.json')
+fetch('simple-config.json')
     .then((response) => response.json())
     .then((json) => {
-        console.log(json);
-        function_ciclo(json);
+        createForm(json);
     })
 
-function function_ciclo(dati){
-    console.log(dati);
-}
+function createForm(dati) {
 
-// let user = '{"name": "Jason", "age": 25, "friends": [0,1,2]}';
-//
-// user = JSON.parse(user);
-//
-// console.log(user.name);
-// console.log(user.age);
-// console.log(user.friends);
+    for (key in dati) {
+        if (key == "channels") {
+            let channels = dati[key];
+            console.log(channels);
+            for (key in channels) {
+                let posizione = document.getElementById("formConstructor");
+                let x = document.createElement("INPUT");
+                x.setAttribute("type", "text");
+                x.placeholder = channels[key].code;
+                posizione.appendChild(x);
+            }
+        }
+    }
+}
