@@ -17,6 +17,10 @@
         {
             "code": "ST.STR.00.HDF",
             "name": "Infrasonic"
+        },
+        {
+            "code": "ST.STR.00.HDF",
+            "name": "Infrasonic"
         }
     ]
 }
