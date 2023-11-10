@@ -31,6 +31,248 @@
                     "name": "Infrasonic"
                 }
             ]
+        },
+        {
+            "id": "MIC5",
+            "name": "Infrasonic - Mic5",
+            "channels": [
+                {
+                    "code": "ST.MC5.00.HDF",
+                    "name": "Infrasonic"
+                },
+                {
+                    "code": "ST.MC5.10.HDF",
+                    "name": "Infrasonic - Aco"
+                },
+                {
+                    "code": "ST.MC5.10.HDF",
+                    "name": "Infrasonic"
+                }
+            ]
+        },
+        {
+            "id": "ROC",
+            "name": "Seismo-infrasonic - Roccette",
+            "channels": [
+                {
+                    "code": "ST.ROC.00.HHZ",
+                    "name": "Seismic BB - UD"
+                },
+                {
+                    "code": "ST.ROC.00.HHN",
+                    "name": "Seismic BB - NS"
+                },
+                {
+                    "code": "ST.ROC.00.HHE",
+                    "name": "Seismic BB - EW"
+                },
+                {
+                    "code": "ST.ROC.00.HDF",
+                    "name": "Infrasonic"
+                }
+            ]
+        },
+        {
+            "id": "SCI",
+            "name": "Seismo-infrasonic Sciara",
+            "channels": [
+                {
+                    "code": "ST.SCI.00.HHZ",
+                    "name": "Seismic BB - UD"
+                },
+                {
+                    "code": "ST.SCI.00.HHN",
+                    "name": "Seismic BB - NS"
+                },
+                {
+                    "code": "ST.SCI.00.HHE",
+                    "name": "Seismic BB - EW"
+                },
+                {
+                    "code": "ST.SCI.00.HDF",
+                    "name": "Infrasonic"
+                }
+            ]
+        },
+        {
+            "id": "RND",
+            "name": "Seismo-infrasonic - Radon",
+            "channels": [
+                {
+                    "code": "ST.RND.00.HHZ",
+                    "name": "Seismic BB - NS"
+                },
+                {
+                    "code": "ST.RND.00.HHN",
+                    "name": "Seismic BB - NS"
+                },
+                {
+                    "code": "ST.RND.00.HHE",
+                    "name": "Seismic BB - EW"
+                },
+                {
+                    "code": "ST.RND.00.HDF",
+                    "name": "Infrasonic"
+                }
+            ]
+        },
+        {
+            "id": "PDC",
+            "name": "",
+            "channels": [
+                {
+                    "code": "ST.PDC.00.HHZ",
+                    "name": "Pressure gauge 15m"
+                },
+                {
+                    "code": "ST.PDC.00.HHN",
+                    "name": "Pressure gauge 50m"
+                },
+                {
+                    "code": "ST.PDC.00.HHE",
+                    "name": "Infrasonic"
+                },
+                {
+                    "code": "ST.PDC.00.MK0",
+                    "name": "Temperature 15m"
+                },
+                {
+                    "code": "ST.PDC.10.MK0",
+                    "name": "Temperature 50m"
+                },
+                {
+                    "code": "ST.PDC.00.MAX",
+                    "name": "Tilt X"
+                },
+                {
+                    "code": "ST.PDC.00.MAY",
+                    "name": "Tilt Y"
+                },
+                {
+                    "code": "ST.PDC.00.HDF",
+                    "name": "Photoresistor"
+                }
+            ]
+        },
+        {
+            "id": "PLB",
+            "name": "Pressure gauge - Punta Labronzo",
+            "channels": [
+                {
+                    "code": "ST.PLB.00.HHZ",
+                    "name": "Pressure gauge 15m"
+                },
+                {
+                    "code": "ST.PLB.00.HHN",
+                    "name": "Pressure gauge 50m"
+                },
+                {
+                    "code": "ST.PLB.00.HHE",
+                    "name": "Infrasonic"
+                },
+                {
+                    "code": "ST.PLB.00.MKO",
+                    "name": "Temperature 15m"
+                },
+                {
+                    "code": "ST.PLB.10.MKO",
+                    "name": "Temperature 50m"
+                },
+                {
+                    "code": "ST.PLB.00.MAX",
+                    "name": "Tilt X"
+                },
+                {
+                    "code": "ST.PLB.00.MAY",
+                    "name": "Tilt Y"
+                },
+                {
+                    "code": "ST.PLB.00.HDF",
+                    "name": "Photoresistor"
+                }
+            ]
+        },
+        {
+            "id": "OHO",
+            "name": "Inclinometer - OHO",
+            "channels": [
+                {
+                    "code": "ST.OHO.00.YTL",
+                    "name": "Inclinometer X"
+                },
+                {
+                    "code": "ST.OHO.00.XTL",
+                    "name": "Inclinometer Y"
+                },
+                {
+                    "code": "ST.OHO.00.VTL",
+                    "name": "Voltage"
+                },
+                {
+                    "code": "ST.OHO.00.TTL",
+                    "name": "Temperature"
+                }
+            ]
+        },
+        {
+            "id": "THK",
+            "name": "Inclinometer - THK",
+            "channels": [
+                {
+                    "code": "ST.THK.00.YTL",
+                    "name": "Inclinometer X"
+                },
+                {
+                    "code": "ST.THK.00.XTL",
+                    "name": "Inclinometer Y"
+                },
+                {
+                    "code": "ST.THK.00.VTL",
+                    "name": "Voltage"
+                },
+                {
+                    "code": "ST.THK.00.TTL",
+                    "name": "Temperature"
+                }
+            ]
+        },
+        {
+            "id": "SOHO",
+            "name": "Strainmeter - Rina Grande",
+            "channels": [
+                {
+                    "code": "ES.SOHO.00.a",
+                    "name": "Strain 1"
+                },
+                {
+                    "code": "ES.SOHO.00.b",
+                    "name": "Strain 2"
+                },
+                {
+                    "code": "ES.SOHO.00.c",
+                    "name": "Strain 3"
+                },
+                {
+                    "code": "ES.SOHO.00.d",
+                    "name": "Strain 4"
+                },
+                {
+                    "code": "ES.SOHO.00.v",
+                    "name": "Temperature 1"
+                },
+                {
+                    "code": "ES.SOHO.00.w",
+                    "name": "Temperature 2"
+                },
+                {
+                    "code": "ES.SOHO.00.x",
+                    "name": "Temperature 3"
+                },
+                {
+                    "code": "ES.SOHO.00.y",
+                    "name": "Temperature 4"
+                }
+            ]
         }
     ]
 }
