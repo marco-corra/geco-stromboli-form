@@ -30,7 +30,7 @@ h2 {
 .header-section {
     background-color: #ffffff;
     padding-top: 16px;
-    padding-bottom: 16px; 
+    padding-bottom: 16px;
     flex-direction: row;
     justify-content: space-between;
     display: flex;
@@ -59,6 +59,13 @@ h2 {
     flex-wrap: nowrap;
 }
 
+.left-66-child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .right-25 {
     width: 25%;
     display: flex;
@@ -68,8 +75,34 @@ h2 {
 
 .left-25 {
     width: 25%;
+    flex-shrink: 0;
 }
 
 .right-75 {
-    left: 25%;
+    width: 75%;
+}
+
+#formConstructor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.single-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.flex-container-channels {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-channel {
+    width: 33.3333%;
 }

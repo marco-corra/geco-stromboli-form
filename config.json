@@ -3,6 +3,7 @@
         {
             "id": "MIC1",
             "name": "Infrasonic - Mic1",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.MC1.00.HDF",
@@ -13,6 +14,7 @@
         {
             "id": "STR",
             "name": "Seismo-infrasonic - Stromboli",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.STR.00.HHZ",
@@ -35,6 +37,7 @@
         {
             "id": "MIC5",
             "name": "Infrasonic - Mic5",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.MC5.00.HDF",
@@ -53,6 +56,7 @@
         {
             "id": "ROC",
             "name": "Seismo-infrasonic - Roccette",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.ROC.00.HHZ",
@@ -75,6 +79,7 @@
         {
             "id": "SCI",
             "name": "Seismo-infrasonic Sciara",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.SCI.00.HHZ",
@@ -97,6 +102,7 @@
         {
             "id": "RND",
             "name": "Seismo-infrasonic - Radon",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.RND.00.HHZ",
@@ -118,7 +124,8 @@
         },
         {
             "id": "PDC",
-            "name": "",
+            "name": "Pressure gauge - Punta dei Corvi",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.PDC.00.HHZ",
@@ -157,6 +164,7 @@
         {
             "id": "PLB",
             "name": "Pressure gauge - Punta Labronzo",
+            "type": "",
             "channels": [
                 {
                     "code": "ST.PLB.00.HHZ",
@@ -195,13 +203,14 @@
         {
             "id": "OHO",
             "name": "Inclinometer - OHO",
+            "type": "",
             "channels": [
                 {
-                    "code": "ST.OHO.00.YTL",
+                    "code": "ST.OHO.00.XTL",
                     "name": "Inclinometer X"
                 },
                 {
-                    "code": "ST.OHO.00.XTL",
+                    "code": "ST.OHO.00.YTL",
                     "name": "Inclinometer Y"
                 },
                 {
@@ -217,13 +226,14 @@
         {
             "id": "THK",
             "name": "Inclinometer - THK",
+            "type": "",
             "channels": [
                 {
-                    "code": "ST.THK.00.YTL",
+                    "code": "ST.THK.00.XTL",
                     "name": "Inclinometer X"
                 },
                 {
-                    "code": "ST.THK.00.XTL",
+                    "code": "ST.THK.00.YTL",
                     "name": "Inclinometer Y"
                 },
                 {
@@ -239,6 +249,7 @@
         {
             "id": "SOHO",
             "name": "Strainmeter - Rina Grande",
+            "type": "",
             "channels": [
                 {
                     "code": "ES.SOHO.00.a",
