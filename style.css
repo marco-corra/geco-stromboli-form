@@ -50,6 +50,7 @@ h2 {
     flex-wrap: nowrap;
     padding-top: 24px;
     padding-bottom: 24px;
+    gap: 24px;
 }
 
 .left-66 {
@@ -64,6 +65,8 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 24px;
+    margin-bottom: 16px;
 }
 
 .right-25 {
@@ -76,16 +79,32 @@ h2 {
 .left-25 {
     width: 25%;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-25:hover {
+    background-color: #D8EAFF;
 }
 
 .right-75 {
     width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #formConstructor {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    gap: 8px;
 }
 
 .single-row {
@@ -93,6 +112,25 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 24px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.station-img {
+    width: 26px;
+}
+.station-text {
+    font-size: 16px;
+    line-height: 19px;
+    background: none;
+    border: solid 0px;
+    padding: 0px;
+    font-family: inherit;
+    font-weight: 700;
+    color: #6B6666;
+    text-align: center;
+    width: 100%
 }
 
 
@@ -101,8 +139,19 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .flex-channel {
-    width: 33.3333%;
+    width: calc(33.3333% - 24px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
 }

@@ -31,7 +31,21 @@ function createForm(dati) {
                 div.appendChild(divRight);
 
                 // Create Station Element of the Form
-                let x = document.createElement("a");
+                let icon = document.createElement("img");
+                if (stations[key].type == "infrasonic") {
+                    icon.setAttribute("src","./img/infrasonic.svg");
+                } else if (stations[key].type == "seismo-infrasonic") {
+                    icon.setAttribute("src","./img/seismo-infrasonic.svg");
+                } else if (stations[key].type == "pressure") {
+                    icon.setAttribute("src","./img/pressure.svg");
+                } else if (stations[key].type == "inclinometer") {
+                    icon.setAttribute("src","./img/inclinometer.svg");
+                } 
+                icon.classList.add("station-img");
+                divLeft.appendChild(icon);
+
+                let x = document.createElement("p");
+                x.classList.add("station-text");
                 let createAText = document.createTextNode(stations[key].name);
                 x.appendChild(createAText);
                 divLeft.appendChild(x);
@@ -56,12 +70,18 @@ function createForm(dati) {
                     y.setAttribute("name", channels[key].code);
                     y.setAttribute("for", channels[key].code);
                     y.setAttribute("id", channels[key].code)
-                    item.appendChild(y);
+
+                    // let checkmark = document.createElement("span");
+                    // checkmark.classList.add("checkmark");
+
                     let label = document.createElement("label");
                     label.setAttribute("for", channels[key].code);
                     let createText = document.createTextNode(channels[key].name);
                     label.appendChild(createText);
                     item.appendChild(label);
+
+                    item.appendChild(y);
+                    // item.appendChild(checkmark);
                 }
             }
         }
