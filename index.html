@@ -36,12 +36,36 @@
                         <!-- Questo è il div in cui andare a creare ogni nuova riga con station sulla sinistra e channels sulla destra -->
                     </div>
                 </div>
-                <div class="right-25">
-                    <h2>Time interval</h2>
-                    <h2>Format</h2>
-                    <h2>ELAB</h2>
-                    <button>Download</button>
-                    <button>Display</button>
+                <div class="right-33">
+                    <div class="custom-div time-interval-div">
+                        <h2>Time interval UTC</h2>
+                    </div>
+                    <div class="custom-div format-div">
+                        <h2>Format</h2>
+                        <div class="radio-div">
+                            <div class="format-radio">
+                                <input type="radio" id="mat" name="format" value="mat">
+                                <label class="input-format-radio" for="mat"><img src="./img/mat.svg" title="mat">.mat</label>
+                            </div>
+                            <div class="format-radio">
+                                <input type="radio" id="mseed" name="format" value="mseed">
+                                <label class="input-format-radio" for="mseed"><img src="./img/mseed.svg" title="mseed">mseed</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-div elab-div">
+                        <h2>ELAB</h2>
+                        <div class="radio-div">
+                            <input type="radio" id="elab1" name="elab" value="elab1">
+                            <label for="elab1">ELAB1</label><br>
+                            <input type="radio" id="elab2" name="elab" value="elab2">
+                            <label for="elab2">ELAB2</label>
+                        </div>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="flex-button download-button"><img src="./img/download.svg">Download</button>
+                        <button class="flex-button display-button"><img src="./img/display.svg">Display</button>
+                    </div>
                 </div>
         </form>
     </section>
