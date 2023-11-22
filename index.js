@@ -22,7 +22,8 @@ function createForm(dati) {
 
                 // Create left column of the row
                 let divLeft = document.createElement("div");
-                divLeft.classList.add("left-25");
+                divLeft.classList.add("single-station-25");
+                // divLeft.setAttribute("onclick", "stationClicked()");
                 div.appendChild(divLeft);
 
                 // Create right column of the row
@@ -34,12 +35,16 @@ function createForm(dati) {
                 let icon = document.createElement("img");
                 if (stations[key].type == "infrasonic") {
                     icon.setAttribute("src","./img/infrasonic.svg");
+                    icon.setAttribute("title", "infrasonic");
                 } else if (stations[key].type == "seismo-infrasonic") {
                     icon.setAttribute("src","./img/seismo-infrasonic.svg");
+                    icon.setAttribute("title", "seismo-infrasonic");
                 } else if (stations[key].type == "pressure") {
                     icon.setAttribute("src","./img/pressure.svg");
+                    icon.setAttribute("title", "pressure");
                 } else if (stations[key].type == "inclinometer") {
                     icon.setAttribute("src","./img/inclinometer.svg");
+                    icon.setAttribute("title", "inclinometer");
                 } 
                 icon.classList.add("station-img");
                 divLeft.appendChild(icon);
