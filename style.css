@@ -191,6 +191,41 @@ h2 {
 /* Time Interval UTC */
 .time-interval-div {}
 
+.date-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.input-time-local {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 19px 24px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 8px;
+    align-items: flex-end;
+}
+
+.input-time-local label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.input-time-local input {
+    border: solid 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.input-time-local input:hover {
+    color: #1D7FF2;
+}
+
 /* Format */
 .format-div {}
 
@@ -229,7 +264,8 @@ h2 {
     gap: 4px;
 }
 
-.format-radio-clicked, .format-radio-clicked:hover {
+.format-radio-clicked,
+.format-radio-clicked:hover {
     background-color: #1D7FF2;
     color: #ffffff;
 }
@@ -237,6 +273,30 @@ h2 {
 /* Elab */
 .elab-div {
     margin-bottom: 16px;
+}
+
+.elab-radio {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 18px 22px;
+    font-weight: 700;
+    color: #6B6666;
+    font-size: 16px;
+    line-height: 1em;
+}
+
+.elab-radio:hover {
+    background-color: #D8EAFF;
+}
+
+.elab-radio input {
+    display: none;
+}
+
+.elab-radio-clicked,
+.elab-radio-clicked:hover {
+    background-color: #1D7FF2;
+    color: #ffffff;
 }
 
 .radio-div input,

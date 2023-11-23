@@ -96,6 +96,10 @@ function setFormEvent() {
         });
     });
 
+    // Setta l'attributo MAX per il Time End
+    const timeEnd = document.getElementById("time-end");
+    console.log(timeEnd);
+
     // Eventi al Click sui Format
     const inputFormatRadio = document.querySelectorAll('.input-format-radio');
     inputFormatRadio.forEach(item => {
@@ -122,6 +126,22 @@ function setFormEvent() {
         });
     });
 
+    // Eventi al Click sugli Elab
+    const inputElabRadio = document.querySelectorAll('.input-elab-radio');
+    inputElabRadio.forEach(item => {
+        item.addEventListener("click", function () {
+            // console.log(item.parentElement.childNodes[1].checked);
+
+            inputElabRadio.forEach(item => {
+                if (item.parentElement.classList.contains("elab-radio-clicked")) {
+                    item.parentElement.classList.remove("elab-radio-clicked");
+                }
+            });
+            item.parentElement.classList.add("elab-radio-clicked");
+        });
+    });
+
+    // Eventi al Mouse Over / Mouse Out del pulsante display
     document.querySelector(".display-button").addEventListener("mouseover", function () {
         document.querySelector(".display-button").firstChild.src = "./img/inclinometer.svg";
     });
