@@ -17,7 +17,13 @@
     <header>
         <div class="container header-section">
             <h1>Stromboli Waveforms Download</h1>
-            <img class="logo" src="./img/logo-colori-geco.png">
+            <div class="header-right">
+                <img class="logo-lgs" src="./img/logo-colori-lgs.png">
+                <div class="header-logo-geco">
+                    <p class="header-text">Powered by</p>
+                    <img class="logo" src="./img/logo-colori-geco.png">
+                </div>
+            </div>
         </div>
     </header>
     <section class="container">
@@ -42,11 +48,13 @@
                         <div class="date-div">
                             <div class="input-time-local">
                                 <label for="time-start">Data Inizio</label>
-                                <input type="datetime-local" id="time-start" name="time-start" value="0000-00-00T00:00" />
+                                <input type="datetime-local" id="time-start" name="time-start"
+                                    value="0000-00-00T00:00" />
                             </div>
                             <div class="input-time-local">
                                 <label for="time-end">Data Fine</label>
-                                <input type="datetime-local" id="time-end" name="time-end" max ="" value="0000-00-00T00:00" />
+                                <input type="datetime-local" id="time-end" name="time-end" max=""
+                                    value="0000-00-00T00:00" />
                             </div>
                         </div>
                     </div>
@@ -59,7 +67,8 @@
                                         title="mat">.mat</label>
                             </div>
                             <div class="format-radio">
-                                <input type="radio" id="mseed" name="format" value="mseed" class="format-radio-selezione">
+                                <input type="radio" id="mseed" name="format" value="mseed"
+                                    class="format-radio-selezione">
                                 <label class="input-format-radio" for="mseed"><img src="./img/mseed.svg"
                                         title="mseed">mseed</label>
                             </div>
@@ -79,8 +88,10 @@
                         </div>
                     </div>
                     <div class="buttons-row">
-                        <button id="download-button" class="flex-button download-button" type="button"><img src="./img/download.svg">Download</button>
-                        <button id="display-button" class="flex-button display-button" type="button"><img src="./img/display.svg">Display</button>
+                        <button id="download-button" class="flex-button download-button" type="button"><img
+                                src="./img/download.svg">Download</button>
+                        <button id="display-button" class="flex-button display-button" type="button"><img
+                                src="./img/display.svg">Display</button>
                     </div>
                 </div>
         </form>

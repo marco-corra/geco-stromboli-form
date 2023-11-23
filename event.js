@@ -3,7 +3,7 @@ setTimeout(setFormEvent, 1000);
 
 function setFormEvent() {
     // Commenta il console.log sotto una volta che tutto funziona
-    console.log(document.querySelectorAll('.single-station-25'));
+    // console.log(document.querySelectorAll('.single-station-25'));
 
     // Eventi sul click del single Station item
     document.querySelectorAll('.single-station-25').forEach(item => {
@@ -47,9 +47,61 @@ function setFormEvent() {
         });
     });
 
-    // Eventi al click sui single Channel item
+    // Eventi al click sui single Checkbox del Channel item
     document.querySelectorAll('.flex-channel').forEach(item => {
         item.lastChild.addEventListener("click", function () {
+            if (item.classList.contains("flex-channel-checked")) {
+                // Il channel viene DESELEZIONATO
+                item.classList.remove("flex-channel-checked");
+                let focusStation = false;
+                item.parentElement.querySelectorAll('.flex-channel').forEach(item => {
+                    if (item.lastChild.checked == true) {
+                        focusStation = true;
+                    }
+                });
+                if (focusStation == false) {
+                    item.parentElement.parentElement.parentElement.querySelectorAll('.single-station-25').forEach(item => {
+                        item.classList.remove("station-clicked");
+                        if (item.firstChild.title == "infrasonic") {
+                            item.firstChild.setAttribute("src", "./img/infrasonic.svg");
+                        } else if (item.firstChild.title == "seismo-infrasonic") {
+                            item.firstChild.setAttribute("src", "./img/seismo-infrasonic.svg");
+                        } else if (item.firstChild.title == "pressure") {
+                            item.firstChild.setAttribute("src", "./img/pressure.svg");
+                        } else if (item.firstChild.title == "inclinometer") {
+                            item.firstChild.setAttribute("src", "./img/inclinometer.svg");
+                        }
+                    });
+                }
+            }
+
+            else {
+                // Evidenzia il Channel SELEZIONATO
+                item.classList.add("flex-channel-checked");
+
+                // Evidenzia la Stazione del Channel Selezionato
+                item.parentElement.parentElement.parentElement.querySelectorAll('.single-station-25').forEach(item => {
+                    item.classList.add("station-clicked");
+                    if (item.firstChild.title == "infrasonic") {
+                        item.firstChild.setAttribute("src", "./img/infrasonic-hover.svg");
+                    } else if (item.firstChild.title == "seismo-infrasonic") {
+                        item.firstChild.setAttribute("src", "./img/seismo-infrasonic-hover.svg");
+                    } else if (item.firstChild.title == "pressure") {
+                        item.firstChild.setAttribute("src", "./img/pressure-hover.svg");
+                    } else if (item.firstChild.title == "inclinometer") {
+                        item.firstChild.setAttribute("src", "./img/inclinometer-hover.svg");
+                    }
+                });
+            }
+        });
+    });
+
+    // Eventi al click sui Contenitori completi (flex-channel)
+    document.querySelectorAll('.flex-channel').forEach(item => {
+        item.addEventListener("click", function () {
+            if (item.lastChild.checked == true) {item.lastChild.checked = false;}
+            else {item.lastChild.checked = true;}
+            
             if (item.classList.contains("flex-channel-checked")) {
                 // Il channel viene DESELEZIONATO
                 item.classList.remove("flex-channel-checked");
@@ -118,49 +170,103 @@ function setFormEvent() {
 
 
     // Eventi al Click sui Format
-    const inputFormatRadio = document.querySelectorAll('.input-format-radio');
-    inputFormatRadio.forEach(item => {
-        item.addEventListener("click", function () {
-            // console.log(item.parentElement.childNodes[1].checked);
+    // FUNZIONA CORRETTAMENTE SOLAMENTE LEGATA AL RADIO BUTTON, TRAMITE LA LABEL CLICCABILE
 
-            inputFormatRadio.forEach(item => {
-                if (item.parentElement.classList.contains("format-radio-clicked")) {
-                    item.parentElement.classList.remove("format-radio-clicked");
-                    if (item.firstChild.title == "mat") {
-                        item.firstChild.src = "./img/mat.svg";
+    // const inputFormatRadio = document.querySelectorAll('.input-format-radio');
+    // inputFormatRadio.forEach(item => {
+    //     item.addEventListener("click", function () {
+    //         // console.log(item.parentElement.childNodes[1].checked);
+
+    //         inputFormatRadio.forEach(item => {
+    //             if (item.parentElement.classList.contains("format-radio-clicked")) {
+    //                 item.parentElement.classList.remove("format-radio-clicked");
+    //                 if (item.firstChild.title == "mat") {
+    //                     item.firstChild.src = "./img/mat.svg";
+    //                 }
+    //                 else if (item.firstChild.title == "mseed") {
+    //                     item.firstChild.src = "./img/mseed.svg"
+    //                 }
+    //             }
+    //         });
+    //         item.parentElement.classList.add("format-radio-clicked");
+    //         if (item.firstChild.title == "mat") {
+    //             item.firstChild.src = "./img/mat-hover.svg";
+    //         } else if (item.firstChild.title == "mseed") {
+    //             item.firstChild.src = "./img/mseed-hover.svg";
+    //         }
+    //     });
+    // });
+
+    const formatRadio = document.querySelectorAll('.format-radio');
+    formatRadio.forEach(item => {
+        item.addEventListener("click", function () {
+            item.childNodes[1].checked = true;
+
+            formatRadio.forEach(item => {
+                if (item.classList.contains("format-radio-clicked")) {
+                    item.classList.remove("format-radio-clicked");
+                    if (item.querySelector('.input-format-radio').firstChild.title == "mat") {
+                        item.querySelector('.input-format-radio').firstChild.src = "./img/mat.svg";
                     }
-                    else if (item.firstChild.title == "mseed") {
-                        item.firstChild.src = "./img/mseed.svg"
+                    else if (item.querySelector('.input-format-radio').firstChild.title == "mseed") {
+                        item.querySelector('.input-format-radio').firstChild.src = "./img/mseed.svg"
                     }
                 }
             });
-            item.parentElement.classList.add("format-radio-clicked");
-            if (item.firstChild.title == "mat") {
-                item.firstChild.src = "./img/inclinometer.svg";
-            } else if (item.firstChild.title == "mseed") {
-                item.firstChild.src = "./img/inclinometer.svg";
+            item.classList.add("format-radio-clicked");
+            if (item.querySelector('.input-format-radio').firstChild.title == "mat") {
+                item.querySelector('.input-format-radio').firstChild.src = "./img/mat-hover.svg";
+            } else if (item.querySelector('.input-format-radio').firstChild.title == "mseed") {
+                item.querySelector('.input-format-radio').firstChild.src = "./img/mseed-hover.svg";
             }
+
+            // Controllo Status Checked dei radio
+            // formatRadio.forEach(item => {
+            //     console.log(item.childNodes[1].checked);
+            // });
         });
     });
 
-    // Eventi al Click sugli Elab
-    const inputElabRadio = document.querySelectorAll('.input-elab-radio');
-    inputElabRadio.forEach(item => {
-        item.addEventListener("click", function () {
-            // console.log(item.parentElement.childNodes[1].checked);
 
-            inputElabRadio.forEach(item => {
-                if (item.parentElement.classList.contains("elab-radio-clicked")) {
-                    item.parentElement.classList.remove("elab-radio-clicked");
+
+    // Eventi al Click sugli Elab
+
+    // FUNZIONA CORRETTAMENTE SOLAMENTE LEGATA AL RADIO BUTTON, TRAMITE LA LABEL CLICCABILE
+    // const inputElabRadio = document.querySelectorAll('.input-elab-radio');
+    // inputElabRadio.forEach(item => {
+    //     item.addEventListener("click", function () {
+    //         // console.log(item.parentElement.childNodes[1].checked);
+
+    //         inputElabRadio.forEach(item => {
+    //             if (item.parentElement.classList.contains("elab-radio-clicked")) {
+    //                 item.parentElement.classList.remove("elab-radio-clicked");
+    //             }
+    //         });
+    //         item.parentElement.classList.add("elab-radio-clicked");
+    //     });
+    // });
+
+    const elabRadio = document.querySelectorAll('.elab-radio');
+    elabRadio.forEach(item => {
+        item.addEventListener("click", function () {
+            item.childNodes[1].checked = true;
+            elabRadio.forEach(item => {
+                if (item.classList.contains("elab-radio-clicked")) {
+                    item.classList.remove("elab-radio-clicked");
                 }
             });
-            item.parentElement.classList.add("elab-radio-clicked");
+            item.classList.add("elab-radio-clicked");
+
+            // Controllo Status Checked dei radio
+            // elabRadio.forEach(item => {
+            //     console.log(item.childNodes[1].checked);
+            // });
         });
     });
 
     // Eventi al Mouse Over / Mouse Out del pulsante display
     document.querySelector(".display-button").addEventListener("mouseover", function () {
-        document.querySelector(".display-button").firstChild.src = "./img/inclinometer.svg";
+        document.querySelector(".display-button").firstChild.src = "./img/display-hover.svg";
     });
     document.querySelector(".display-button").addEventListener("mouseout", function () {
         document.querySelector(".display-button").firstChild.src = "./img/display.svg";
@@ -198,11 +304,11 @@ function setFormEvent() {
                 console.log(item.value);
             }
         });
-        if (format == "") {alert("Seleziona un formato per il download dei dati!"); return;}
+        if (format == "") { alert("Seleziona un formato per il download dei dati!"); return; }
 
         let url = customUrl + "snlc=" + channels + "&ts=" + tStart + ":00" + "&te=" + tEnd + ":00";
-        console.log("Questo è l'urlo customizzato che si sta creando:\n" + url);+
-        console.log(format);
+        console.log("Questo è l'urlo customizzato che si sta creando:\n" + url); +
+            console.log(format);
         window.open(url, '_blank');
     });
 };
