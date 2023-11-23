@@ -98,21 +98,34 @@ function setFormEvent() {
 
     // Eventi al Click sui Format
     const inputFormatRadio = document.querySelectorAll('.input-format-radio');
-    inputFormatRadio.forEach(item =>{
+    inputFormatRadio.forEach(item => {
         item.addEventListener("click", function () {
-            console.log(item.parentElement.childNodes[1].checked);
-            item.parentElement.classList.add("format-radio-clicked");
-            
-            // inputFormatRadio.forEach(item => {
-            //     if (item.parentElement.childNodes[1].checked == false){
-            //         console.log("ciao");
-            //         item.parentElement.classList.add("format-radio-clicked");
-            //     }
-            //     else {
-            //         item.parentElement.classList.remove("format-radio-clicked");
-            //     }
-            // });
+            // console.log(item.parentElement.childNodes[1].checked);
 
+            inputFormatRadio.forEach(item => {
+                if (item.parentElement.classList.contains("format-radio-clicked")) {
+                    item.parentElement.classList.remove("format-radio-clicked");
+                    if (item.firstChild.title == "mat") {
+                        item.firstChild.src = "./img/mat.svg";
+                    }
+                    else if (item.firstChild.title == "mseed") {
+                        item.firstChild.src = "./img/mseed.svg"
+                    }
+                }
+            });
+            item.parentElement.classList.add("format-radio-clicked");
+            if (item.firstChild.title == "mat") {
+                item.firstChild.src = "./img/inclinometer.svg";
+            } else if (item.firstChild.title == "mseed") {
+                item.firstChild.src = "./img/inclinometer.svg";
+            }
         });
+    });
+
+    document.querySelector(".display-button").addEventListener("mouseover", function () {
+        document.querySelector(".display-button").firstChild.src = "./img/inclinometer.svg";
+    });
+    document.querySelector(".display-button").addEventListener("mouseout", function () {
+        document.querySelector(".display-button").firstChild.src = "./img/display.svg";
     });
 };
