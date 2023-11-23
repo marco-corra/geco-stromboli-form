@@ -53,14 +53,14 @@ h2 {
     gap: 24px;
 }
 
-.left-66 {
+.section-left-75 {
     width: 75%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-.left-66-child {
+.section-left-75-child {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -69,7 +69,7 @@ h2 {
     margin-bottom: 16px;
 }
 
-.right-33 {
+.section-right-25 {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -201,13 +201,14 @@ h2 {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 19px 24px;
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 16px;
     row-gap: 8px;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .input-time-local label {
@@ -233,6 +234,7 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .format-radio {

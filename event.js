@@ -97,8 +97,25 @@ function setFormEvent() {
     });
 
     // Setta l'attributo MAX per il Time End
-    const timeEnd = document.getElementById("time-end");
-    console.log(timeEnd);
+    
+    // let timeEnd = document.querySelector("#time-end");
+
+    // timeEnd.addEventListener("click", function () {
+    //     let date = new Date();
+    //     let month = date.getMonth() + 1;
+    //     let day = date.getDate();
+    //     let hours = date.getHours();
+    //     let minutes = date.getMinutes();
+
+    //     if (month < 10) { month = "0" + month; }
+    //     if (day < 10) { day = "0" + day; }
+    //     if (hours < 10) { hours = "0" + hours; }
+    //     if (minutes < 10) { minutes = "0" + minutes; }
+
+    //     timeEnd.max = date.getFullYear() + "-" + month + "-" + day + "T" + hours + ":" + minutes;
+    //     console.log(timeEnd.max);
+    // });
+
 
     // Eventi al Click sui Format
     const inputFormatRadio = document.querySelectorAll('.input-format-radio');
