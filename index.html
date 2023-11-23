@@ -21,7 +21,7 @@
         </div>
     </header>
     <section class="container">
-        <form method="get">
+        <form id="myForm">
             <div class="form-section">
                 <div class="section-left-75">
                     <div class="section-left-75-child">
@@ -54,12 +54,12 @@
                         <h2>Format</h2>
                         <div class="radio-div">
                             <div class="format-radio">
-                                <input type="radio" id="mat" name="format" value="mat">
+                                <input type="radio" id="mat" name="format" value="mat" class="format-radio-selezione">
                                 <label class="input-format-radio" for="mat"><img src="./img/mat.svg"
                                         title="mat">.mat</label>
                             </div>
                             <div class="format-radio">
-                                <input type="radio" id="mseed" name="format" value="mseed">
+                                <input type="radio" id="mseed" name="format" value="mseed" class="format-radio-selezione">
                                 <label class="input-format-radio" for="mseed"><img src="./img/mseed.svg"
                                         title="mseed">mseed</label>
                             </div>
@@ -79,8 +79,8 @@
                         </div>
                     </div>
                     <div class="buttons-row">
-                        <button class="flex-button download-button"><img src="./img/download.svg">Download</button>
-                        <button class="flex-button display-button"><img src="./img/display.svg">Display</button>
+                        <button id="download-button" class="flex-button download-button" type="button"><img src="./img/download.svg">Download</button>
+                        <button id="display-button" class="flex-button display-button" type="button"><img src="./img/display.svg">Display</button>
                     </div>
                 </div>
         </form>

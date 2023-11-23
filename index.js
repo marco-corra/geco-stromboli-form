@@ -75,6 +75,7 @@ function createForm(dati) {
                     y.setAttribute("name", channels[key].code);
                     y.setAttribute("for", channels[key].code);
                     y.setAttribute("id", channels[key].code)
+                    y.classList.add("single-station-channel");
 
                     // let checkmark = document.createElement("span");
                     // checkmark.classList.add("checkmark");

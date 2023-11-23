@@ -97,7 +97,7 @@ function setFormEvent() {
     });
 
     // Setta l'attributo MAX per il Time End
-    
+
     // let timeEnd = document.querySelector("#time-end");
 
     // timeEnd.addEventListener("click", function () {
@@ -164,5 +164,45 @@ function setFormEvent() {
     });
     document.querySelector(".display-button").addEventListener("mouseout", function () {
         document.querySelector(".display-button").firstChild.src = "./img/display.svg";
+    });
+
+
+    // Eventi al click sui pulsanti
+    let buttonDownload = document.getElementById("download-button");
+    buttonDownload.addEventListener("click", function () {
+        console.log("Pulsante Donload Cliccato");
+        let customUrl = "http://10.1.1.100/getdata?";
+
+        let channels = "";
+        let tStart = "";
+        let tEnd = "";
+        let format = "";
+
+        document.querySelectorAll('.single-station-channel').forEach(item => {
+            if (item.checked == true) {
+                if (channels == "") { channels = item.value; }
+                else { channels = channels + "|" + item.value; }
+            }
+        });
+        if (channels == "") { alert("Seleziona almeno un canale!"); return; }
+
+
+        if (document.getElementById("time-start").value == "") { alert("Seleziona la Data di Inizio"); return; }
+        tStart = document.getElementById("time-start").value;
+        if (document.getElementById("time-end").value == "") { alert("Seleziona la Data di Fine"); return; }
+        tEnd = document.getElementById("time-end").value;
+
+        document.querySelectorAll(".format-radio-selezione").forEach(item => {
+            if (item.checked == true) {
+                format = item.value;
+                console.log(item.value);
+            }
+        });
+        if (format == "") {alert("Seleziona un formato per il download dei dati!"); return;}
+
+        let url = customUrl + "snlc=" + channels + "&ts=" + tStart + ":00" + "&te=" + tEnd + ":00";
+        console.log("Questo è l'urlo customizzato che si sta creando:\n" + url);+
+        console.log(format);
+        window.open(url, '_blank');
     });
 };

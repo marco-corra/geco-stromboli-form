@@ -6,7 +6,7 @@
             "type": "infrasonic",
             "channels": [
                 {
-                    "code": "ST.MC1.00.HDF",
+                    "code": "ST_MC1_00_HDF",
                     "name": "Infrasonic"
                 }
             ]
@@ -17,19 +17,19 @@
             "type": "seismo-infrasonic",
             "channels": [
                 {
-                    "code": "ST.STR.00.HHZ",
+                    "code": "ST_STR_00_HHZ",
                     "name": "Seismic BB - UD"
                 },
                 {
-                    "code": "ST.STR.00.HHN",
+                    "code": "ST_STR_00_HHN",
                     "name": "Seismic BB - NS"
                 },
                 {
-                    "code": "ST.STR.00.HHE",
+                    "code": "ST_STR_00_HHE",
                     "name": "Seismic BB - EW"
                 },
                 {
-                    "code": "ST.STR.00.HDF",
+                    "code": "ST_STR_00_HDF",
                     "name": "Infrasonic"
                 }
             ]
@@ -40,15 +40,15 @@
             "type": "infrasonic",
             "channels": [
                 {
-                    "code": "ST.MC5.00.HDF",
+                    "code": "ST_MC5_00_HDF",
                     "name": "Infrasonic"
                 },
                 {
-                    "code": "ST.MC5.10.HDF",
+                    "code": "ST_MC5_10_HDF",
                     "name": "Infrasonic - Aco"
                 },
                 {
-                    "code": "ST.MC5.10.HDF",
+                    "code": "ST_MC5_10_HDF",
                     "name": "Infrasonic"
                 }
             ]
@@ -59,19 +59,19 @@
             "type": "seismo-infrasonic",
             "channels": [
                 {
-                    "code": "ST.ROC.00.HHZ",
+                    "code": "ST_ROC_00_HHZ",
                     "name": "Seismic BB - UD"
                 },
                 {
-                    "code": "ST.ROC.00.HHN",
+                    "code": "ST_ROC_00_HHN",
                     "name": "Seismic BB - NS"
                 },
                 {
-                    "code": "ST.ROC.00.HHE",
+                    "code": "ST_ROC_00_HHE",
                     "name": "Seismic BB - EW"
                 },
                 {
-                    "code": "ST.ROC.00.HDF",
+                    "code": "ST_ROC_00_HDF",
                     "name": "Infrasonic"
                 }
             ]
@@ -82,19 +82,19 @@
             "type": "seismo-infrasonic",
             "channels": [
                 {
-                    "code": "ST.SCI.00.HHZ",
+                    "code": "ST_SCI_00_HHZ",
                     "name": "Seismic BB - UD"
                 },
                 {
-                    "code": "ST.SCI.00.HHN",
+                    "code": "ST_SCI_00_HHN",
                     "name": "Seismic BB - NS"
                 },
                 {
-                    "code": "ST.SCI.00.HHE",
+                    "code": "ST_SCI_00_HHE",
                     "name": "Seismic BB - EW"
                 },
                 {
-                    "code": "ST.SCI.00.HDF",
+                    "code": "ST_SCI_00_HDF",
                     "name": "Infrasonic"
                 }
             ]
@@ -105,19 +105,19 @@
             "type": "seismo-infrasonic",
             "channels": [
                 {
-                    "code": "ST.RND.00.HHZ",
+                    "code": "ST_RND_00_HHZ",
                     "name": "Seismic BB - NS"
                 },
                 {
-                    "code": "ST.RND.00.HHN",
+                    "code": "ST_RND_00_HHN",
                     "name": "Seismic BB - NS"
                 },
                 {
-                    "code": "ST.RND.00.HHE",
+                    "code": "ST_RND_00_HHE",
                     "name": "Seismic BB - EW"
                 },
                 {
-                    "code": "ST.RND.00.HDF",
+                    "code": "ST_RND_00_HDF",
                     "name": "Infrasonic"
                 }
             ]
@@ -128,35 +128,35 @@
             "type": "pressure",
             "channels": [
                 {
-                    "code": "ST.PDC.00.HHZ",
+                    "code": "ST_PDC_00_HHZ",
                     "name": "Pressure gauge 15m"
                 },
                 {
-                    "code": "ST.PDC.00.HHN",
+                    "code": "ST_PDC_00_HHN",
                     "name": "Pressure gauge 50m"
                 },
                 {
-                    "code": "ST.PDC.00.HHE",
+                    "code": "ST_PDC_00_HHE",
                     "name": "Infrasonic"
                 },
                 {
-                    "code": "ST.PDC.00.MK0",
+                    "code": "ST_PDC_00_MK0",
                     "name": "Temperature 15m"
                 },
                 {
-                    "code": "ST.PDC.10.MK0",
+                    "code": "ST_PDC_10_MK0",
                     "name": "Temperature 50m"
                 },
                 {
-                    "code": "ST.PDC.00.MAX",
+                    "code": "ST_PDC_00_MAX",
                     "name": "Tilt X"
                 },
                 {
-                    "code": "ST.PDC.00.MAY",
+                    "code": "ST_PDC_00_MAY",
                     "name": "Tilt Y"
                 },
                 {
-                    "code": "ST.PDC.00.HDF",
+                    "code": "ST_PDC_00_HDF",
                     "name": "Photoresistor"
                 }
             ]
@@ -167,35 +167,35 @@
             "type": "pressure",
             "channels": [
                 {
-                    "code": "ST.PLB.00.HHZ",
+                    "code": "ST_PLB_00_HHZ",
                     "name": "Pressure gauge 15m"
                 },
                 {
-                    "code": "ST.PLB.00.HHN",
+                    "code": "ST_PLB_00_HHN",
                     "name": "Pressure gauge 50m"
                 },
                 {
-                    "code": "ST.PLB.00.HHE",
+                    "code": "ST_PLB_00_HHE",
                     "name": "Infrasonic"
                 },
                 {
-                    "code": "ST.PLB.00.MKO",
+                    "code": "ST_PLB_00_MKO",
                     "name": "Temperature 15m"
                 },
                 {
-                    "code": "ST.PLB.10.MKO",
+                    "code": "ST_PLB_10_MKO",
                     "name": "Temperature 50m"
                 },
                 {
-                    "code": "ST.PLB.00.MAX",
+                    "code": "ST_PLB_00_MAX",
                     "name": "Tilt X"
                 },
                 {
-                    "code": "ST.PLB.00.MAY",
+                    "code": "ST_PLB_00_MAY",
                     "name": "Tilt Y"
                 },
                 {
-                    "code": "ST.PLB.00.HDF",
+                    "code": "ST_PLB_00_HDF",
                     "name": "Photoresistor"
                 }
             ]
@@ -206,19 +206,19 @@
             "type": "inclinometer",
             "channels": [
                 {
-                    "code": "ST.OHO.00.XTL",
+                    "code": "ST_OHO_00_XTL",
                     "name": "Inclinometer X"
                 },
                 {
-                    "code": "ST.OHO.00.YTL",
+                    "code": "ST_OHO_00_YTL",
                     "name": "Inclinometer Y"
                 },
                 {
-                    "code": "ST.OHO.00.VTL",
+                    "code": "ST_OHO_00_VTL",
                     "name": "Voltage"
                 },
                 {
-                    "code": "ST.OHO.00.TTL",
+                    "code": "ST_OHO_00_TTL",
                     "name": "Temperature"
                 }
             ]
@@ -229,19 +229,19 @@
             "type": "inclinometer",
             "channels": [
                 {
-                    "code": "ST.THK.00.XTL",
+                    "code": "ST_THK_00_XTL",
                     "name": "Inclinometer X"
                 },
                 {
-                    "code": "ST.THK.00.YTL",
+                    "code": "ST_THK_00_YTL",
                     "name": "Inclinometer Y"
                 },
                 {
-                    "code": "ST.THK.00.VTL",
+                    "code": "ST_THK_00_VTL",
                     "name": "Voltage"
                 },
                 {
-                    "code": "ST.THK.00.TTL",
+                    "code": "ST_THK_00_TTL",
                     "name": "Temperature"
                 }
             ]
@@ -252,35 +252,35 @@
             "type": "inclinometer",
             "channels": [
                 {
-                    "code": "ES.SOHO.00.a",
+                    "code": "ES_SOHO_00_a",
                     "name": "Strain 1"
                 },
                 {
-                    "code": "ES.SOHO.00.b",
+                    "code": "ES_SOHO_00_b",
                     "name": "Strain 2"
                 },
                 {
-                    "code": "ES.SOHO.00.c",
+                    "code": "ES_SOHO_00_c",
                     "name": "Strain 3"
                 },
                 {
-                    "code": "ES.SOHO.00.d",
+                    "code": "ES_SOHO_00_d",
                     "name": "Strain 4"
                 },
                 {
-                    "code": "ES.SOHO.00.v",
+                    "code": "ES_SOHO_00_v",
                     "name": "Temperature 1"
                 },
                 {
-                    "code": "ES.SOHO.00.w",
+                    "code": "ES_SOHO_00_w",
                     "name": "Temperature 2"
                 },
                 {
-                    "code": "ES.SOHO.00.x",
+                    "code": "ES_SOHO_00_x",
                     "name": "Temperature 3"
                 },
                 {
-                    "code": "ES.SOHO.00.y",
+                    "code": "ES_SOHO_00_y",
                     "name": "Temperature 4"
                 }
             ]
