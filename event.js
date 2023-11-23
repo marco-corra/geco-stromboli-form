@@ -50,6 +50,7 @@ function setFormEvent() {
     // Eventi al click sui single Checkbox del Channel item
     document.querySelectorAll('.flex-channel').forEach(item => {
         item.lastChild.addEventListener("click", function () {
+
             if (item.classList.contains("flex-channel-checked")) {
                 // Il channel viene DESELEZIONATO
                 item.classList.remove("flex-channel-checked");
@@ -96,57 +97,57 @@ function setFormEvent() {
         });
     });
 
-    // Eventi al click sui Contenitori completi (flex-channel)
-    document.querySelectorAll('.flex-channel').forEach(item => {
-        item.addEventListener("click", function () {
-            if (item.lastChild.checked == true) {item.lastChild.checked = false;}
-            else {item.lastChild.checked = true;}
-            
-            if (item.classList.contains("flex-channel-checked")) {
-                // Il channel viene DESELEZIONATO
-                item.classList.remove("flex-channel-checked");
-                let focusStation = false;
-                item.parentElement.querySelectorAll('.flex-channel').forEach(item => {
-                    if (item.lastChild.checked == true) {
-                        focusStation = true;
-                    }
-                });
-                if (focusStation == false) {
-                    item.parentElement.parentElement.parentElement.querySelectorAll('.single-station-25').forEach(item => {
-                        item.classList.remove("station-clicked");
-                        if (item.firstChild.title == "infrasonic") {
-                            item.firstChild.setAttribute("src", "./img/infrasonic.svg");
-                        } else if (item.firstChild.title == "seismo-infrasonic") {
-                            item.firstChild.setAttribute("src", "./img/seismo-infrasonic.svg");
-                        } else if (item.firstChild.title == "pressure") {
-                            item.firstChild.setAttribute("src", "./img/pressure.svg");
-                        } else if (item.firstChild.title == "inclinometer") {
-                            item.firstChild.setAttribute("src", "./img/inclinometer.svg");
-                        }
-                    });
-                }
-            }
+    // // Eventi al click sui Contenitori completi (flex-channel)
+    // document.querySelectorAll('.flex-channel').forEach(item => {
+    //     item.addEventListener("click", function () {
+    //         if (item.lastChild.checked == true) {item.lastChild.checked = false;}
+    //         else {item.lastChild.checked = true;}
 
-            else {
-                // Evidenzia il Channel SELEZIONATO
-                item.classList.add("flex-channel-checked");
+    //         if (item.classList.contains("flex-channel-checked")) {
+    //             // Il channel viene DESELEZIONATO
+    //             item.classList.remove("flex-channel-checked");
+    //             let focusStation = false;
+    //             item.parentElement.querySelectorAll('.flex-channel').forEach(item => {
+    //                 if (item.lastChild.checked == true) {
+    //                     focusStation = true;
+    //                 }
+    //             });
+    //             if (focusStation == false) {
+    //                 item.parentElement.parentElement.parentElement.querySelectorAll('.single-station-25').forEach(item => {
+    //                     item.classList.remove("station-clicked");
+    //                     if (item.firstChild.title == "infrasonic") {
+    //                         item.firstChild.setAttribute("src", "./img/infrasonic.svg");
+    //                     } else if (item.firstChild.title == "seismo-infrasonic") {
+    //                         item.firstChild.setAttribute("src", "./img/seismo-infrasonic.svg");
+    //                     } else if (item.firstChild.title == "pressure") {
+    //                         item.firstChild.setAttribute("src", "./img/pressure.svg");
+    //                     } else if (item.firstChild.title == "inclinometer") {
+    //                         item.firstChild.setAttribute("src", "./img/inclinometer.svg");
+    //                     }
+    //                 });
+    //             }
+    //         }
 
-                // Evidenzia la Stazione del Channel Selezionato
-                item.parentElement.parentElement.parentElement.querySelectorAll('.single-station-25').forEach(item => {
-                    item.classList.add("station-clicked");
-                    if (item.firstChild.title == "infrasonic") {
-                        item.firstChild.setAttribute("src", "./img/infrasonic-hover.svg");
-                    } else if (item.firstChild.title == "seismo-infrasonic") {
-                        item.firstChild.setAttribute("src", "./img/seismo-infrasonic-hover.svg");
-                    } else if (item.firstChild.title == "pressure") {
-                        item.firstChild.setAttribute("src", "./img/pressure-hover.svg");
-                    } else if (item.firstChild.title == "inclinometer") {
-                        item.firstChild.setAttribute("src", "./img/inclinometer-hover.svg");
-                    }
-                });
-            }
-        });
-    });
+    //         else {
+    //             // Evidenzia il Channel SELEZIONATO
+    //             item.classList.add("flex-channel-checked");
+
+    //             // Evidenzia la Stazione del Channel Selezionato
+    //             item.parentElement.parentElement.parentElement.querySelectorAll('.single-station-25').forEach(item => {
+    //                 item.classList.add("station-clicked");
+    //                 if (item.firstChild.title == "infrasonic") {
+    //                     item.firstChild.setAttribute("src", "./img/infrasonic-hover.svg");
+    //                 } else if (item.firstChild.title == "seismo-infrasonic") {
+    //                     item.firstChild.setAttribute("src", "./img/seismo-infrasonic-hover.svg");
+    //                 } else if (item.firstChild.title == "pressure") {
+    //                     item.firstChild.setAttribute("src", "./img/pressure-hover.svg");
+    //                 } else if (item.firstChild.title == "inclinometer") {
+    //                     item.firstChild.setAttribute("src", "./img/inclinometer-hover.svg");
+    //                 }
+    //             });
+    //         }
+    //     });
+    // });
 
     // Setta l'attributo MAX per il Time End
 
