@@ -208,9 +208,10 @@ function setFormEvent() {
                     item.classList.remove("format-radio-clicked");
                     if (item.querySelector('.input-format-radio').firstChild.title == "mat") {
                         item.querySelector('.input-format-radio').firstChild.src = "./img/mat.svg";
-                    }
-                    else if (item.querySelector('.input-format-radio').firstChild.title == "mseed") {
-                        item.querySelector('.input-format-radio').firstChild.src = "./img/mseed.svg"
+                    } else if (item.querySelector('.input-format-radio').firstChild.title == "mseed") {
+                        item.querySelector('.input-format-radio').firstChild.src = "./img/mseed.svg";
+                    } else if (item.querySelector('.input-format-radio').firstChild.title == "json") {
+                        item.querySelector('.input-format-radio').firstChild.src = "./img/json.svg";
                     }
                 }
             });
@@ -219,12 +220,9 @@ function setFormEvent() {
                 item.querySelector('.input-format-radio').firstChild.src = "./img/mat-hover.svg";
             } else if (item.querySelector('.input-format-radio').firstChild.title == "mseed") {
                 item.querySelector('.input-format-radio').firstChild.src = "./img/mseed-hover.svg";
+            } else if (item.querySelector('.input-format-radio').firstChild.title == "json") {
+                item.querySelector('.input-format-radio').firstChild.src = "./img/json-hover.svg";
             }
-
-            // Controllo Status Checked dei radio
-            // formatRadio.forEach(item => {
-            //     console.log(item.childNodes[1].checked);
-            // });
         });
     });
 
@@ -275,41 +273,55 @@ function setFormEvent() {
 
 
     // Eventi al click sui pulsanti
-    let buttonDownload = document.getElementById("download-button");
-    buttonDownload.addEventListener("click", function () {
-        console.log("Pulsante Donload Cliccato");
-        let customUrl = "http://10.1.1.100/getdata?";
+    let actionButton = document.querySelectorAll(".action-button");
+    actionButton.forEach(item => {
+        item.addEventListener("click", function () {
+            let customUrlDownload = "http://10.1.1.100/getdata?";
+            let customUrlDisplay =" http://10.1.1.100/plot?";
+            let url;
 
-        let channels = "";
-        let tStart = "";
-        let tEnd = "";
-        let format = "";
+            let channels = "";
+            let tStart = "";
+            let tEnd = "";
+            let format = "";
 
-        document.querySelectorAll('.single-station-channel').forEach(item => {
-            if (item.checked == true) {
-                if (channels == "") { channels = item.value; }
-                else { channels = channels + "|" + item.value; }
+            document.querySelectorAll('.single-station-channel').forEach(item => {
+                if (item.checked == true) {
+                    if (channels == "") { channels = item.value; }
+                    else { channels = channels + "|" + item.value; }
+                }
+            });
+            if (channels == "") { alert("Seleziona almeno un canale!"); return; }
+
+
+            if (document.getElementById("time-start").value == "") { alert("Seleziona la Data di Inizio"); return; }
+            tStart = document.getElementById("time-start").value;
+            if (document.getElementById("time-end").value == "") { alert("Seleziona la Data di Fine"); return; }
+            tEnd = document.getElementById("time-end").value;
+
+            document.querySelectorAll(".format-radio-selezione").forEach(item => {
+                if (item.checked == true) {
+                    format = item.value;
+                }
+            });
+            if (format == "") { alert("Seleziona un formato per il download dei dati!"); return; }
+
+            if (item.id == "download-button") {
+                if (format == "") { alert("Seleziona un formato per il download dei dati!"); return; }
+                url = customUrlDownload + "snlc=" + channels + "&ts=" + tStart + ":00" + "&te=" + tEnd + ":00" + "&out=" + format;
+            } else if (item.id=="display-button") {
+                url = customUrlDisplay + "snlc=" + channels + "&ts=" + tStart + ":00" + "&te=" + tEnd + ":00";
             }
+            
+            // console.log("Questo è l'url customizzato che si sta creando:\n" + url);
+            window.open(url, '_blank');
+
+            /* far comparire l'url dell'ultima ricerca effettuata*/
+            document.getElementById("last-research").style="display: block";
+            let urlLastResearch = document.getElementById("url-last-research");
+            urlLastResearch.href = url;
+            urlLastResearch.text = url;
+            
         });
-        if (channels == "") { alert("Seleziona almeno un canale!"); return; }
-
-
-        if (document.getElementById("time-start").value == "") { alert("Seleziona la Data di Inizio"); return; }
-        tStart = document.getElementById("time-start").value;
-        if (document.getElementById("time-end").value == "") { alert("Seleziona la Data di Fine"); return; }
-        tEnd = document.getElementById("time-end").value;
-
-        document.querySelectorAll(".format-radio-selezione").forEach(item => {
-            if (item.checked == true) {
-                format = item.value;
-                console.log(item.value);
-            }
-        });
-        if (format == "") { alert("Seleziona un formato per il download dei dati!"); return; }
-
-        let url = customUrl + "snlc=" + channels + "&ts=" + tStart + ":00" + "&te=" + tEnd + ":00";
-        console.log("Questo è l'urlo customizzato che si sta creando:\n" + url); +
-            console.log(format);
-        window.open(url, '_blank');
     });
 };

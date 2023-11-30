@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="custom-div format-div">
+                    <div class="custom-div format-div margin-bottom-16-div">
                         <h2>Format</h2>
                         <div class="radio-div">
                             <div class="format-radio">
@@ -72,8 +72,14 @@
                                 <label class="input-format-radio" for="mseed"><img src="./img/mseed.svg"
                                         title="mseed">mseed</label>
                             </div>
+                            <div class="format-radio">
+                                <input type="radio" id="json" name="format" value="json" class="format-radio-selezione">
+                                <label class="input-format-radio" for="json"><img src="./img/json.svg"
+                                        title="json">json</label>
+                            </div>
                         </div>
                     </div>
+                    <!--
                     <div class="custom-div elab-div">
                         <h2>ELAB</h2>
                         <div class="radio-div">
@@ -87,11 +93,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="buttons-row">
-                        <button id="download-button" class="flex-button download-button" type="button"><img
-                                src="./img/download.svg">Download</button>
-                        <button id="display-button" class="flex-button display-button" type="button"><img
+                    -->
+                    <div class="buttons-row margin-bottom-16-div">
+                        <button id="download-button" class="flex-button download-button action-button"
+                            type="button"><img src="./img/download.svg">Download</button>
+                        <button id="display-button" class="flex-button display-button action-button" type="button"><img
                                 src="./img/display.svg">Display</button>
+                    </div>
+                    <div id="last-research">
+                        <h3 style="margin-bottom: 8px;">Hai appena cercato:</h3>
+                        <a id="url-last-research" href="" target="_blank"></a>
                     </div>
                 </div>
         </form>

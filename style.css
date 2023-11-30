@@ -18,6 +18,11 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-size: 18px;
+    line-height: 21px;
+}
+
 h2 {
     color: #1D7FF2;
 }
@@ -62,7 +67,7 @@ h2 {
 
 .logo-lgs {
     width: 90px;
-    height:auto;
+    height: auto;
 }
 
 .header-text {
@@ -259,6 +264,10 @@ h2 {
 /* Format */
 .format-div {}
 
+.margin-bottom-16-div {
+    margin-bottom: 16px;
+}
+
 .radio-div {
     display: flex;
     flex-direction: row;
@@ -305,9 +314,6 @@ h2 {
 }
 
 /* Elab */
-.elab-div {
-    margin-bottom: 16px;
-}
 
 .elab-radio {
     background-color: #ffffff;
@@ -389,4 +395,19 @@ h2 {
 .display-button:hover {
     color: #6B6666;
     border-color: #6B6666;
+}
+
+/* Ultima ricerca effettuata */
+#last-research {
+    display: none;
+}
+
+#url-last-research,
+#url-last-research:visited {
+    color: #1D7FF2;
+    text-decoration: underline;
+}
+
+#url-last-research:hover {
+    color: #6B6666;
 }
