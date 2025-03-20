@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="container header-section">
             <h1>Stromboli Waveforms Download</h1>
             <div class="header-right">
@@ -25,7 +25,38 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+    <div id="header-placeholder"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+
+                    // Ora che il menu è stato caricato, assegniamo la classe active
+                    setTimeout(setActiveNavLink, 100); // Aspettiamo un attimo per sicurezza
+                })
+                .catch(error => console.error("Errore nel caricamento dell'header:", error));
+        });
+
+        function setActiveNavLink() {
+            let currentPage = window.location.pathname.split("/").pop(); // Ottiene "index.html" o "elaboration.html"
+
+            if (currentPage === "") {
+                currentPage = "index.html"; // Se l'utente è nella root ("/"), consideriamo index.html
+            }
+
+            document.querySelectorAll("nav ul li a").forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active"); // Aggiunge la classe solo alla voce corretta
+                }
+            });
+        }
+    </script>
+
+
     <section class="container">
         <form id="myForm">
             <div class="form-section">

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Stromboli Waveforms Download</title>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+
+                    // Ora che il menu è stato caricato, assegniamo la classe active
+                    setTimeout(setActiveNavLink, 100); // Aspettiamo un attimo per sicurezza
+                })
+                .catch(error => console.error("Errore nel caricamento dell'header:", error));
+        });
+
+        function setActiveNavLink() {
+            let currentPage = window.location.pathname.split("/").pop(); // Ottiene "index.html" o "elaboration.html"
+
+            if (currentPage === "") {
+                currentPage = "index.html"; // Se l'utente è nella root ("/"), consideriamo index.html
+            }
+
+            document.querySelectorAll("nav ul li a").forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active"); // Aggiunge la classe solo alla voce corretta
+                }
+            });
+        }
+    </script>
+
+
+    <section class="container elaborations-container">
+        <h2>Stromboli Elaborations</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliTiltmetersResponseCheck.png"
+                    class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliSeismicTremor_6M1W_STR.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliSeismicTremor_6M1W_ROC.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliRockfallRate7DAYS.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliRockfallRate60DAYS.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliRockfallEnergy7DAYS.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliInfrasoundSummaryTrendLevel1DAYS.png"
+                    class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliInfrasoundSummaryMap1DAYS.png"
+                    class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliGroundDeformationTHK.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewStromboliGroundDeformationOHO.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images/lgs_viewBumpSymulationCheckRedundancy.png" class="lightbox-trigger">
+            </div>
+            <div class="grid-item">
+                <img src="img/elaborations-images//LGS_VIEW_MAJOR_FIG1.png" class="lightbox-trigger">
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox">
+            <span id="close-lightbox">&times;</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+            <button id="prev"><i class="fas fa-angle-left"></i></button>
+    <button id="next"><i class="fas fa-angle-right"></i></button>
+        </div>
+
+
+    </section>
+    <script src="js/lightbox.js"></script>
+
+</body>
+
+</html>
