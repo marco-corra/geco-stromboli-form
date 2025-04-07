@@ -48,6 +48,7 @@
 
     <section class="container elaborations-container">
         <h2>Stromboli Elaborations</h2>
+        <div id="countdown">Next update: 60 sec</div>
         <div class="grid-container">
             <div class="grid-item">
                 <img src="img/elaborations-images/lgs_viewStromboliTiltmetersResponseCheck.png"
@@ -101,6 +102,38 @@
 
     </section>
     <script src="js/lightbox.js"></script>
+
+    <script>
+        let secondsRemaining = 60;
+        const countdownElement = document.getElementById('countdown');
+      
+        function updateCountdownDisplay() {
+          countdownElement.textContent = `Next update: ${secondsRemaining} sec`;
+        }
+      
+        function refreshImages() {
+          const images = document.querySelectorAll('img');
+          const timestamp = new Date().getTime();
+          images.forEach(img => {
+            const src = img.src.split('?')[0];
+            img.src = `${src}?cache_bust=${timestamp}`;
+          });
+        }
+      
+        // Subito al caricamento: aggiorna immagini + resetta timer
+        refreshImages();
+        updateCountdownDisplay();
+      
+        // Countdown ogni secondo
+        setInterval(() => {
+          secondsRemaining--;
+          if (secondsRemaining <= 0) {
+            refreshImages();
+            secondsRemaining = 60;
+          }
+          updateCountdownDisplay();
+        }, 1000);
+      </script>      
 
 </body>
 
